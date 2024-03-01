@@ -1,0 +1,3 @@
+/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/opencv-classifiers.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/edit_cache.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/rebuild_cache.dir
