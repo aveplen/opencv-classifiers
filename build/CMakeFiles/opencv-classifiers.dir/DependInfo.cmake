@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/plenkinav/Projects/opencv-classifiers/data.cpp" "CMakeFiles/opencv-classifiers.dir/data.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/data.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/main.cpp" "CMakeFiles/opencv-classifiers.dir/main.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/main.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp" "CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp" "CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

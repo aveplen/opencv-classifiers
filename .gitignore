@@ -1,3 +1,19 @@
+test
+opencv-classifiers
+
+build/*/**
+bin/**
+.venv/**
+.cache/**
+_deps/**
+CMakeFiles/**
+lib/**
+
+*.sqlite
+Makefile
+*.pt
+*.onnx
+
 # Prerequisites
 *.d
 
