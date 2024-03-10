@@ -7,6 +7,19 @@
 
 namespace config {
 
+struct Server {
+    std::string address;
+    int timeout;
+    int max_queued;
+    int max_threads;
+    std::string statics_dir;
+};
+
+struct Database {
+    std::string connector;
+    std::string connection_string;
+};
+
 struct Model {
     std::string model_name;
     std::string onnx_path;
@@ -18,6 +31,8 @@ struct Model {
 };
 
 struct Config {
+    Server server;
+    Database database;
     std::vector<Model> models;
 };
 

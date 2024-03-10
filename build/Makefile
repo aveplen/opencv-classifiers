@@ -827,6 +827,30 @@ config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/config.cpp.s
 .PHONY : config.cpp.s
 
+cors_middleware.o: cors_middleware.cpp.o
+.PHONY : cors_middleware.o
+
+# target to build an object file
+cors_middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o
+.PHONY : cors_middleware.cpp.o
+
+cors_middleware.i: cors_middleware.cpp.i
+.PHONY : cors_middleware.i
+
+# target to preprocess a source file
+cors_middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.i
+.PHONY : cors_middleware.cpp.i
+
+cors_middleware.s: cors_middleware.cpp.s
+.PHONY : cors_middleware.s
+
+# target to generate assembly for a file
+cors_middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.s
+.PHONY : cors_middleware.cpp.s
+
 data.o: data.cpp.o
 .PHONY : data.o
 
@@ -851,6 +875,78 @@ data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/data.cpp.s
 .PHONY : data.cpp.s
 
+error_middleware.o: error_middleware.cpp.o
+.PHONY : error_middleware.o
+
+# target to build an object file
+error_middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o
+.PHONY : error_middleware.cpp.o
+
+error_middleware.i: error_middleware.cpp.i
+.PHONY : error_middleware.i
+
+# target to preprocess a source file
+error_middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.i
+.PHONY : error_middleware.cpp.i
+
+error_middleware.s: error_middleware.cpp.s
+.PHONY : error_middleware.s
+
+# target to generate assembly for a file
+error_middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.s
+.PHONY : error_middleware.cpp.s
+
+handler_factory.o: handler_factory.cpp.o
+.PHONY : handler_factory.o
+
+# target to build an object file
+handler_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o
+.PHONY : handler_factory.cpp.o
+
+handler_factory.i: handler_factory.cpp.i
+.PHONY : handler_factory.i
+
+# target to preprocess a source file
+handler_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.i
+.PHONY : handler_factory.cpp.i
+
+handler_factory.s: handler_factory.cpp.s
+.PHONY : handler_factory.s
+
+# target to generate assembly for a file
+handler_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s
+.PHONY : handler_factory.cpp.s
+
+logging_middleware.o: logging_middleware.cpp.o
+.PHONY : logging_middleware.o
+
+# target to build an object file
+logging_middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o
+.PHONY : logging_middleware.cpp.o
+
+logging_middleware.i: logging_middleware.cpp.i
+.PHONY : logging_middleware.i
+
+# target to preprocess a source file
+logging_middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.i
+.PHONY : logging_middleware.cpp.i
+
+logging_middleware.s: logging_middleware.cpp.s
+.PHONY : logging_middleware.s
+
+# target to generate assembly for a file
+logging_middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.s
+.PHONY : logging_middleware.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -874,6 +970,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+middleware.o: middleware.cpp.o
+.PHONY : middleware.o
+
+# target to build an object file
+middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/middleware.cpp.o
+.PHONY : middleware.cpp.o
+
+middleware.i: middleware.cpp.i
+.PHONY : middleware.i
+
+# target to preprocess a source file
+middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/middleware.cpp.i
+.PHONY : middleware.cpp.i
+
+middleware.s: middleware.cpp.s
+.PHONY : middleware.s
+
+# target to generate assembly for a file
+middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/middleware.cpp.s
+.PHONY : middleware.cpp.s
 
 model.o: model.cpp.o
 .PHONY : model.o
@@ -947,6 +1067,54 @@ statements_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s
 .PHONY : statements_handler.cpp.s
 
+static.o: static.cpp.o
+.PHONY : static.o
+
+# target to build an object file
+static.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/static.cpp.o
+.PHONY : static.cpp.o
+
+static.i: static.cpp.i
+.PHONY : static.i
+
+# target to preprocess a source file
+static.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/static.cpp.i
+.PHONY : static.cpp.i
+
+static.s: static.cpp.s
+.PHONY : static.s
+
+# target to generate assembly for a file
+static.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/static.cpp.s
+.PHONY : static.cpp.s
+
+statics_handler.o: statics_handler.cpp.o
+.PHONY : statics_handler.o
+
+# target to build an object file
+statics_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o
+.PHONY : statics_handler.cpp.o
+
+statics_handler.i: statics_handler.cpp.i
+.PHONY : statics_handler.i
+
+# target to preprocess a source file
+statics_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.i
+.PHONY : statics_handler.cpp.i
+
+statics_handler.s: statics_handler.cpp.s
+.PHONY : statics_handler.s
+
+# target to generate assembly for a file
+statics_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s
+.PHONY : statics_handler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1013,12 +1181,27 @@ help:
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
+	@echo "... cors_middleware.o"
+	@echo "... cors_middleware.i"
+	@echo "... cors_middleware.s"
 	@echo "... data.o"
 	@echo "... data.i"
 	@echo "... data.s"
+	@echo "... error_middleware.o"
+	@echo "... error_middleware.i"
+	@echo "... error_middleware.s"
+	@echo "... handler_factory.o"
+	@echo "... handler_factory.i"
+	@echo "... handler_factory.s"
+	@echo "... logging_middleware.o"
+	@echo "... logging_middleware.i"
+	@echo "... logging_middleware.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... middleware.o"
+	@echo "... middleware.i"
+	@echo "... middleware.s"
 	@echo "... model.o"
 	@echo "... model.i"
 	@echo "... model.s"
@@ -1028,6 +1211,12 @@ help:
 	@echo "... statements_handler.o"
 	@echo "... statements_handler.i"
 	@echo "... statements_handler.s"
+	@echo "... static.o"
+	@echo "... static.i"
+	@echo "... static.s"
+	@echo "... statics_handler.o"
+	@echo "... statics_handler.i"
+	@echo "... statics_handler.s"
 .PHONY : help
 
 

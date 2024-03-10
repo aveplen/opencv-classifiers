@@ -10,11 +10,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp" "CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/config.cpp" "CMakeFiles/opencv-classifiers.dir/config.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/config.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp" "CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/data.cpp" "CMakeFiles/opencv-classifiers.dir/data.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/data.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp" "CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp" "CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp" "CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/main.cpp" "CMakeFiles/opencv-classifiers.dir/main.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/main.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/middleware.cpp" "CMakeFiles/opencv-classifiers.dir/middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/middleware.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/model.cpp" "CMakeFiles/opencv-classifiers.dir/model.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/model.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp" "CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp" "CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/static.cpp" "CMakeFiles/opencv-classifiers.dir/static.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/static.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp" "CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

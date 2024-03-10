@@ -178,7 +178,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /Users/plenkinav/Projects/opencv-classifiers/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -194,448 +193,6 @@ opencv-classifiers: cmake_check_build_system
 opencv-classifiers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/build
 .PHONY : opencv-classifiers/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-#=============================================================================
-# Target rules for targets named Experimental
-
-# Build rule for target.
-Experimental: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
-.PHONY : Experimental
-
-# fast build rule for target.
-Experimental/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/Experimental.dir/build.make _deps/yaml-cpp-build/CMakeFiles/Experimental.dir/build
-.PHONY : Experimental/fast
-
-#=============================================================================
-# Target rules for targets named Nightly
-
-# Build rule for target.
-Nightly: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nightly
-.PHONY : Nightly
-
-# fast build rule for target.
-Nightly/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/Nightly.dir/build.make _deps/yaml-cpp-build/CMakeFiles/Nightly.dir/build
-.PHONY : Nightly/fast
-
-#=============================================================================
-# Target rules for targets named Continuous
-
-# Build rule for target.
-Continuous: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Continuous
-.PHONY : Continuous
-
-# fast build rule for target.
-Continuous/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/Continuous.dir/build.make _deps/yaml-cpp-build/CMakeFiles/Continuous.dir/build
-.PHONY : Continuous/fast
-
-#=============================================================================
-# Target rules for targets named NightlyMemoryCheck
-
-# Build rule for target.
-NightlyMemoryCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
-.PHONY : NightlyMemoryCheck
-
-# fast build rule for target.
-NightlyMemoryCheck/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyMemoryCheck.dir/build
-.PHONY : NightlyMemoryCheck/fast
-
-#=============================================================================
-# Target rules for targets named NightlyStart
-
-# Build rule for target.
-NightlyStart: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyStart
-.PHONY : NightlyStart
-
-# fast build rule for target.
-NightlyStart/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyStart.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyStart.dir/build
-.PHONY : NightlyStart/fast
-
-#=============================================================================
-# Target rules for targets named NightlyUpdate
-
-# Build rule for target.
-NightlyUpdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyUpdate
-.PHONY : NightlyUpdate
-
-# fast build rule for target.
-NightlyUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyUpdate.dir/build
-.PHONY : NightlyUpdate/fast
-
-#=============================================================================
-# Target rules for targets named NightlyConfigure
-
-# Build rule for target.
-NightlyConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
-.PHONY : NightlyConfigure
-
-# fast build rule for target.
-NightlyConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyConfigure.dir/build
-.PHONY : NightlyConfigure/fast
-
-#=============================================================================
-# Target rules for targets named NightlyBuild
-
-# Build rule for target.
-NightlyBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyBuild
-.PHONY : NightlyBuild
-
-# fast build rule for target.
-NightlyBuild/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyBuild.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyBuild.dir/build
-.PHONY : NightlyBuild/fast
-
-#=============================================================================
-# Target rules for targets named NightlyTest
-
-# Build rule for target.
-NightlyTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyTest
-.PHONY : NightlyTest
-
-# fast build rule for target.
-NightlyTest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyTest.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyTest.dir/build
-.PHONY : NightlyTest/fast
-
-#=============================================================================
-# Target rules for targets named NightlyCoverage
-
-# Build rule for target.
-NightlyCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyCoverage
-.PHONY : NightlyCoverage
-
-# fast build rule for target.
-NightlyCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyCoverage.dir/build
-.PHONY : NightlyCoverage/fast
-
-#=============================================================================
-# Target rules for targets named NightlyMemCheck
-
-# Build rule for target.
-NightlyMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
-.PHONY : NightlyMemCheck
-
-# fast build rule for target.
-NightlyMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyMemCheck.dir/build
-.PHONY : NightlyMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named NightlySubmit
-
-# Build rule for target.
-NightlySubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlySubmit
-.PHONY : NightlySubmit
-
-# fast build rule for target.
-NightlySubmit/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlySubmit.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlySubmit.dir/build
-.PHONY : NightlySubmit/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalStart
-
-# Build rule for target.
-ExperimentalStart: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalStart
-.PHONY : ExperimentalStart
-
-# fast build rule for target.
-ExperimentalStart/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalStart.dir/build
-.PHONY : ExperimentalStart/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalUpdate
-
-# Build rule for target.
-ExperimentalUpdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalUpdate
-.PHONY : ExperimentalUpdate
-
-# fast build rule for target.
-ExperimentalUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalUpdate.dir/build
-.PHONY : ExperimentalUpdate/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalConfigure
-
-# Build rule for target.
-ExperimentalConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalConfigure
-.PHONY : ExperimentalConfigure
-
-# fast build rule for target.
-ExperimentalConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalConfigure.dir/build
-.PHONY : ExperimentalConfigure/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalBuild
-
-# Build rule for target.
-ExperimentalBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalBuild
-.PHONY : ExperimentalBuild
-
-# fast build rule for target.
-ExperimentalBuild/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalBuild.dir/build
-.PHONY : ExperimentalBuild/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalTest
-
-# Build rule for target.
-ExperimentalTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
-.PHONY : ExperimentalTest
-
-# fast build rule for target.
-ExperimentalTest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalTest.dir/build
-.PHONY : ExperimentalTest/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalCoverage
-
-# Build rule for target.
-ExperimentalCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalCoverage
-.PHONY : ExperimentalCoverage
-
-# fast build rule for target.
-ExperimentalCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalCoverage.dir/build
-.PHONY : ExperimentalCoverage/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalMemCheck
-
-# Build rule for target.
-ExperimentalMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
-.PHONY : ExperimentalMemCheck
-
-# fast build rule for target.
-ExperimentalMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalMemCheck.dir/build
-.PHONY : ExperimentalMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalSubmit
-
-# Build rule for target.
-ExperimentalSubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
-.PHONY : ExperimentalSubmit
-
-# fast build rule for target.
-ExperimentalSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalSubmit.dir/build
-.PHONY : ExperimentalSubmit/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousStart
-
-# Build rule for target.
-ContinuousStart: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousStart
-.PHONY : ContinuousStart
-
-# fast build rule for target.
-ContinuousStart/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousStart.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousStart.dir/build
-.PHONY : ContinuousStart/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousUpdate
-
-# Build rule for target.
-ContinuousUpdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousUpdate
-.PHONY : ContinuousUpdate
-
-# fast build rule for target.
-ContinuousUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousUpdate.dir/build
-.PHONY : ContinuousUpdate/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousConfigure
-
-# Build rule for target.
-ContinuousConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousConfigure
-.PHONY : ContinuousConfigure
-
-# fast build rule for target.
-ContinuousConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousConfigure.dir/build
-.PHONY : ContinuousConfigure/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousBuild
-
-# Build rule for target.
-ContinuousBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousBuild
-.PHONY : ContinuousBuild
-
-# fast build rule for target.
-ContinuousBuild/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousBuild.dir/build
-.PHONY : ContinuousBuild/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousTest
-
-# Build rule for target.
-ContinuousTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousTest
-.PHONY : ContinuousTest
-
-# fast build rule for target.
-ContinuousTest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousTest.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousTest.dir/build
-.PHONY : ContinuousTest/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousCoverage
-
-# Build rule for target.
-ContinuousCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
-.PHONY : ContinuousCoverage
-
-# fast build rule for target.
-ContinuousCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousCoverage.dir/build
-.PHONY : ContinuousCoverage/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousMemCheck
-
-# Build rule for target.
-ContinuousMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
-.PHONY : ContinuousMemCheck
-
-# fast build rule for target.
-ContinuousMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousMemCheck.dir/build
-.PHONY : ContinuousMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousSubmit
-
-# Build rule for target.
-ContinuousSubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousSubmit
-.PHONY : ContinuousSubmit
-
-# fast build rule for target.
-ContinuousSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousSubmit.dir/build
-.PHONY : ContinuousSubmit/fast
-
-#=============================================================================
-# Target rules for targets named yaml-cpp
-
-# Build rule for target.
-yaml-cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp
-.PHONY : yaml-cpp
-
-# fast build rule for target.
-yaml-cpp/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build
-.PHONY : yaml-cpp/fast
-
-#=============================================================================
-# Target rules for targets named yaml-cpp-sandbox
-
-# Build rule for target.
-yaml-cpp-sandbox: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-sandbox
-.PHONY : yaml-cpp-sandbox
-
-# fast build rule for target.
-yaml-cpp-sandbox/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build
-.PHONY : yaml-cpp-sandbox/fast
-
-#=============================================================================
-# Target rules for targets named yaml-cpp-parse
-
-# Build rule for target.
-yaml-cpp-parse: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-parse
-.PHONY : yaml-cpp-parse
-
-# fast build rule for target.
-yaml-cpp-parse/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build
-.PHONY : yaml-cpp-parse/fast
-
-#=============================================================================
-# Target rules for targets named yaml-cpp-read
-
-# Build rule for target.
-yaml-cpp-read: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-read
-.PHONY : yaml-cpp-read
-
-# fast build rule for target.
-yaml-cpp-read/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build
-.PHONY : yaml-cpp-read/fast
-
-#=============================================================================
-# Target rules for targets named loguru
-
-# Build rule for target.
-loguru: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loguru
-.PHONY : loguru
-
-# fast build rule for target.
-loguru/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/logurugitrepo-build/CMakeFiles/loguru.dir/build.make _deps/logurugitrepo-build/CMakeFiles/loguru.dir/build
-.PHONY : loguru/fast
 
 #=============================================================================
 # Target rules for targets named Boost_atomic
@@ -1270,6 +827,30 @@ config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/config.cpp.s
 .PHONY : config.cpp.s
 
+cors_middleware.o: cors_middleware.cpp.o
+.PHONY : cors_middleware.o
+
+# target to build an object file
+cors_middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o
+.PHONY : cors_middleware.cpp.o
+
+cors_middleware.i: cors_middleware.cpp.i
+.PHONY : cors_middleware.i
+
+# target to preprocess a source file
+cors_middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.i
+.PHONY : cors_middleware.cpp.i
+
+cors_middleware.s: cors_middleware.cpp.s
+.PHONY : cors_middleware.s
+
+# target to generate assembly for a file
+cors_middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.s
+.PHONY : cors_middleware.cpp.s
+
 data.o: data.cpp.o
 .PHONY : data.o
 
@@ -1294,6 +875,78 @@ data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/data.cpp.s
 .PHONY : data.cpp.s
 
+error_middleware.o: error_middleware.cpp.o
+.PHONY : error_middleware.o
+
+# target to build an object file
+error_middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o
+.PHONY : error_middleware.cpp.o
+
+error_middleware.i: error_middleware.cpp.i
+.PHONY : error_middleware.i
+
+# target to preprocess a source file
+error_middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.i
+.PHONY : error_middleware.cpp.i
+
+error_middleware.s: error_middleware.cpp.s
+.PHONY : error_middleware.s
+
+# target to generate assembly for a file
+error_middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.s
+.PHONY : error_middleware.cpp.s
+
+handler_factory.o: handler_factory.cpp.o
+.PHONY : handler_factory.o
+
+# target to build an object file
+handler_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o
+.PHONY : handler_factory.cpp.o
+
+handler_factory.i: handler_factory.cpp.i
+.PHONY : handler_factory.i
+
+# target to preprocess a source file
+handler_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.i
+.PHONY : handler_factory.cpp.i
+
+handler_factory.s: handler_factory.cpp.s
+.PHONY : handler_factory.s
+
+# target to generate assembly for a file
+handler_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s
+.PHONY : handler_factory.cpp.s
+
+logging_middleware.o: logging_middleware.cpp.o
+.PHONY : logging_middleware.o
+
+# target to build an object file
+logging_middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o
+.PHONY : logging_middleware.cpp.o
+
+logging_middleware.i: logging_middleware.cpp.i
+.PHONY : logging_middleware.i
+
+# target to preprocess a source file
+logging_middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.i
+.PHONY : logging_middleware.cpp.i
+
+logging_middleware.s: logging_middleware.cpp.s
+.PHONY : logging_middleware.s
+
+# target to generate assembly for a file
+logging_middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.s
+.PHONY : logging_middleware.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -1317,6 +970,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+middleware.o: middleware.cpp.o
+.PHONY : middleware.o
+
+# target to build an object file
+middleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/middleware.cpp.o
+.PHONY : middleware.cpp.o
+
+middleware.i: middleware.cpp.i
+.PHONY : middleware.i
+
+# target to preprocess a source file
+middleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/middleware.cpp.i
+.PHONY : middleware.cpp.i
+
+middleware.s: middleware.cpp.s
+.PHONY : middleware.s
+
+# target to generate assembly for a file
+middleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/middleware.cpp.s
+.PHONY : middleware.cpp.s
 
 model.o: model.cpp.o
 .PHONY : model.o
@@ -1390,29 +1067,53 @@ statements_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s
 .PHONY : statements_handler.cpp.s
 
-test.o: test.cpp.o
-.PHONY : test.o
+static.o: static.cpp.o
+.PHONY : static.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
+static.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/static.cpp.o
+.PHONY : static.cpp.o
 
-test.i: test.cpp.i
-.PHONY : test.i
+static.i: static.cpp.i
+.PHONY : static.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+static.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/static.cpp.i
+.PHONY : static.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+static.s: static.cpp.s
+.PHONY : static.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+static.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/static.cpp.s
+.PHONY : static.cpp.s
+
+statics_handler.o: statics_handler.cpp.o
+.PHONY : statics_handler.o
+
+# target to build an object file
+statics_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o
+.PHONY : statics_handler.cpp.o
+
+statics_handler.i: statics_handler.cpp.i
+.PHONY : statics_handler.i
+
+# target to preprocess a source file
+statics_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.i
+.PHONY : statics_handler.cpp.i
+
+statics_handler.s: statics_handler.cpp.s
+.PHONY : statics_handler.s
+
+# target to generate assembly for a file
+statics_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s
+.PHONY : statics_handler.cpp.s
 
 # Help Target
 help:
@@ -1428,34 +1129,6 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... Continuous"
-	@echo "... ContinuousBuild"
-	@echo "... ContinuousConfigure"
-	@echo "... ContinuousCoverage"
-	@echo "... ContinuousMemCheck"
-	@echo "... ContinuousStart"
-	@echo "... ContinuousSubmit"
-	@echo "... ContinuousTest"
-	@echo "... ContinuousUpdate"
-	@echo "... Experimental"
-	@echo "... ExperimentalBuild"
-	@echo "... ExperimentalConfigure"
-	@echo "... ExperimentalCoverage"
-	@echo "... ExperimentalMemCheck"
-	@echo "... ExperimentalStart"
-	@echo "... ExperimentalSubmit"
-	@echo "... ExperimentalTest"
-	@echo "... ExperimentalUpdate"
-	@echo "... Nightly"
-	@echo "... NightlyBuild"
-	@echo "... NightlyConfigure"
-	@echo "... NightlyCoverage"
-	@echo "... NightlyMemCheck"
-	@echo "... NightlyMemoryCheck"
-	@echo "... NightlyStart"
-	@echo "... NightlySubmit"
-	@echo "... NightlyTest"
-	@echo "... NightlyUpdate"
 	@echo "... uninstall"
 	@echo "... ActiveRecord"
 	@echo "... ActiveRecordCompiler"
@@ -1501,25 +1174,34 @@ help:
 	@echo "... Util"
 	@echo "... XML"
 	@echo "... Zip"
-	@echo "... loguru"
 	@echo "... opencv-classifiers"
-	@echo "... test"
-	@echo "... yaml-cpp"
-	@echo "... yaml-cpp-parse"
-	@echo "... yaml-cpp-read"
-	@echo "... yaml-cpp-sandbox"
 	@echo "... classify_handler.o"
 	@echo "... classify_handler.i"
 	@echo "... classify_handler.s"
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
+	@echo "... cors_middleware.o"
+	@echo "... cors_middleware.i"
+	@echo "... cors_middleware.s"
 	@echo "... data.o"
 	@echo "... data.i"
 	@echo "... data.s"
+	@echo "... error_middleware.o"
+	@echo "... error_middleware.i"
+	@echo "... error_middleware.s"
+	@echo "... handler_factory.o"
+	@echo "... handler_factory.i"
+	@echo "... handler_factory.s"
+	@echo "... logging_middleware.o"
+	@echo "... logging_middleware.i"
+	@echo "... logging_middleware.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... middleware.o"
+	@echo "... middleware.i"
+	@echo "... middleware.s"
 	@echo "... model.o"
 	@echo "... model.i"
 	@echo "... model.s"
@@ -1529,9 +1211,12 @@ help:
 	@echo "... statements_handler.o"
 	@echo "... statements_handler.i"
 	@echo "... statements_handler.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... static.o"
+	@echo "... static.i"
+	@echo "... static.s"
+	@echo "... statics_handler.o"
+	@echo "... statics_handler.i"
+	@echo "... statics_handler.s"
 .PHONY : help
 
 
@@ -1543,7 +1228,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/plenkinav/Projects/opencv-classifiers/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

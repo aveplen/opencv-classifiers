@@ -39,8 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/plenkinav/Projects/opencv-classifiers/_deps/yaml-cpp-build/cmake_install.cmake")
-  include("/Users/plenkinav/Projects/opencv-classifiers/_deps/logurugitrepo-build/cmake_install.cmake")
   include("/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake_install.cmake")
   include("/Users/plenkinav/Projects/opencv-classifiers/poco/cmake_install.cmake")
 

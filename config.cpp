@@ -1,38 +1,51 @@
 #include "./config.hpp"
 #include "./stacktrace.hpp"
+#include "Poco/JSON/Array.h"
 #include "Poco/JSON/Object.h"
 #include "Poco/JSON/Parser.h"
+#include "Poco/SharedPtr.h"
 #include <fstream>
 #include <sstream>
+#include <string>
 #include <utility>
 #include <vector>
 
 config::ConfigReader::ConfigReader(std::string config_path, bool caching)
 : m_config_path(std::move(config_path)), m_caching(caching){};
 
-config::Config config::ConfigReader::read_config() {
-    if (m_caching && m_cache.has_value()) {
-        return m_cache.value();
-    }
-
-    std::ifstream config_file(m_config_path);
+std::string read_file(std::string filename) {
+    std::ifstream config_file(filename);
     if (!config_file.good()) {
         std::stringstream ss;
-        ss << "File with name '" << m_config_path << "' doesnt exist";
+        ss << "File with name '" << filename << "' doesnt exist";
         throw ExceptionWithTrace(ss.str());
     }
 
     std::stringstream ss;
     ss << config_file.rdbuf();
-    std::string config_string = ss.str();
+    return ss.str();
+}
 
-    Poco::JSON::Parser parser;
-    auto obj = parser.parse(config_string)
-               .extract<Poco::JSON::Object::Ptr>();
-    std::vector<config::Config> config_nodes;
-    auto arr = obj->getArray("models");
+config::Server parse_server(Poco::SharedPtr<Poco::JSON::Object> server) {
+    return config::Server{
+        .timeout = server->get("timeout"),
+        .max_queued = server->get("max_queued"),
+        .max_threads = server->get("max_threads"),
+        .address = server->get("address"),
+        .statics_dir = server->get("statics_dir"),
+    };
+}
 
+config::Database parse_database(Poco::SharedPtr<Poco::JSON::Object> database) {
+    return config::Database{
+        .connector = database->get("connector"),
+        .connection_string = database->get("connection_string"),
+    };
+}
+
+std::vector<config::Model> parse_models(Poco::SharedPtr<Poco::JSON::Array> arr) {
     std::vector<config::Model> models;
+
     for (std::size_t i = 0; i < arr->size(); i++) {
         auto model = arr->getObject(i);
 
@@ -47,7 +60,27 @@ config::Config config::ConfigReader::read_config() {
         });
     }
 
-    return config::Config{
-        .models = models,
+    return models;
+}
+
+config::Config config::ConfigReader::read_config() {
+    if (m_caching && m_cache.has_value()) {
+        return m_cache.value();
+    }
+
+    Poco::JSON::Parser parser;
+    auto obj =
+    parser
+    .parse(read_file(m_config_path))
+    .extract<Poco::JSON::Object::Ptr>();
+
+    m_cache = {
+        config::Config{
+        .server = parse_server(obj->getObject("server")),
+        .database = parse_database(obj->getObject("database")),
+        .models = parse_models(obj->getArray("models")),
+        }
     };
+
+    return m_cache.value();
 };

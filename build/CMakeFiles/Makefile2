@@ -498,7 +498,7 @@ CMakeFiles/opencv-classifiers.dir/all: poco/Data/SQLite/CMakeFiles/DataSQLite.di
 CMakeFiles/opencv-classifiers.dir/all: poco/Zip/CMakeFiles/Zip.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=100 "Built target opencv-classifiers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=99,100 "Built target opencv-classifiers"
 .PHONY : CMakeFiles/opencv-classifiers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -768,7 +768,7 @@ boost-cmake/CMakeFiles/Boost_graph.dir/all: boost-cmake/CMakeFiles/Boost_regex.d
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_graph.dir/rule
@@ -928,12 +928,12 @@ boost-cmake/CMakeFiles/Boost_math.dir/clean:
 boost-cmake/CMakeFiles/Boost_program_options.dir/all:
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_program_options.dir/build.make boost-cmake/CMakeFiles/Boost_program_options.dir/depend
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_program_options.dir/build.make boost-cmake/CMakeFiles/Boost_program_options.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=23,24 "Built target Boost_program_options"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=23 "Built target Boost_program_options"
 .PHONY : boost-cmake/CMakeFiles/Boost_program_options.dir/all
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_program_options.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_program_options.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_program_options.dir/rule
@@ -954,12 +954,12 @@ boost-cmake/CMakeFiles/Boost_program_options.dir/clean:
 boost-cmake/CMakeFiles/Boost_random.dir/all:
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_random.dir/build.make boost-cmake/CMakeFiles/Boost_random.dir/depend
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_random.dir/build.make boost-cmake/CMakeFiles/Boost_random.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num= "Built target Boost_random"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=24 "Built target Boost_random"
 .PHONY : boost-cmake/CMakeFiles/Boost_random.dir/all
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_random.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_random.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_random.dir/rule
@@ -980,12 +980,12 @@ boost-cmake/CMakeFiles/Boost_random.dir/clean:
 boost-cmake/CMakeFiles/Boost_regex.dir/all:
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_regex.dir/build.make boost-cmake/CMakeFiles/Boost_regex.dir/depend
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_regex.dir/build.make boost-cmake/CMakeFiles/Boost_regex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=25,26 "Built target Boost_regex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=25 "Built target Boost_regex"
 .PHONY : boost-cmake/CMakeFiles/Boost_regex.dir/all
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_regex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_regex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_regex.dir/rule
@@ -1006,12 +1006,12 @@ boost-cmake/CMakeFiles/Boost_regex.dir/clean:
 boost-cmake/CMakeFiles/Boost_serialization.dir/all:
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_serialization.dir/build.make boost-cmake/CMakeFiles/Boost_serialization.dir/depend
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_serialization.dir/build.make boost-cmake/CMakeFiles/Boost_serialization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=27,28,29 "Built target Boost_serialization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=26,27,28,29 "Built target Boost_serialization"
 .PHONY : boost-cmake/CMakeFiles/Boost_serialization.dir/all
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_serialization.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_serialization.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_serialization.dir/rule
@@ -1064,7 +1064,7 @@ boost-cmake/CMakeFiles/Boost_unit_test_framework.dir/all: boost-cmake/CMakeFiles
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_unit_test_framework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_unit_test_framework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_unit_test_framework.dir/rule
@@ -1111,12 +1111,12 @@ boost-cmake/CMakeFiles/Boost_thread.dir/clean:
 boost-cmake/CMakeFiles/Boost_timer.dir/all: boost-cmake/CMakeFiles/Boost_chrono.dir/all
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_timer.dir/build.make boost-cmake/CMakeFiles/Boost_timer.dir/depend
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_timer.dir/build.make boost-cmake/CMakeFiles/Boost_timer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=30 "Built target Boost_timer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num= "Built target Boost_timer"
 .PHONY : boost-cmake/CMakeFiles/Boost_timer.dir/all
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_timer.dir/rule
@@ -1138,12 +1138,12 @@ boost-cmake/CMakeFiles/Boost_type_erasure.dir/all: boost-cmake/CMakeFiles/Boost_
 boost-cmake/CMakeFiles/Boost_type_erasure.dir/all: boost-cmake/CMakeFiles/Boost_thread.dir/all
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_type_erasure.dir/build.make boost-cmake/CMakeFiles/Boost_type_erasure.dir/depend
 	$(MAKE) $(MAKESILENT) -f boost-cmake/CMakeFiles/Boost_type_erasure.dir/build.make boost-cmake/CMakeFiles/Boost_type_erasure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num= "Built target Boost_type_erasure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=30 "Built target Boost_type_erasure"
 .PHONY : boost-cmake/CMakeFiles/Boost_type_erasure.dir/all
 
 # Build rule for subdir invocation for target.
 boost-cmake/CMakeFiles/Boost_type_erasure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost-cmake/CMakeFiles/Boost_type_erasure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : boost-cmake/CMakeFiles/Boost_type_erasure.dir/rule
@@ -1219,7 +1219,7 @@ poco/CMakeFiles/uninstall.dir/clean:
 poco/Foundation/CMakeFiles/Foundation.dir/all:
 	$(MAKE) $(MAKESILENT) -f poco/Foundation/CMakeFiles/Foundation.dir/build.make poco/Foundation/CMakeFiles/Foundation.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Foundation/CMakeFiles/Foundation.dir/build.make poco/Foundation/CMakeFiles/Foundation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65 "Built target Foundation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64 "Built target Foundation"
 .PHONY : poco/Foundation/CMakeFiles/Foundation.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1245,12 +1245,12 @@ poco/Foundation/CMakeFiles/Foundation.dir/clean:
 poco/Encodings/CMakeFiles/Encodings.dir/all: poco/Foundation/CMakeFiles/Foundation.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/Encodings/CMakeFiles/Encodings.dir/build.make poco/Encodings/CMakeFiles/Encodings.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Encodings/CMakeFiles/Encodings.dir/build.make poco/Encodings/CMakeFiles/Encodings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=42,43,44,45 "Built target Encodings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=42,43,44 "Built target Encodings"
 .PHONY : poco/Encodings/CMakeFiles/Encodings.dir/all
 
 # Build rule for subdir invocation for target.
 poco/Encodings/CMakeFiles/Encodings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/Encodings/CMakeFiles/Encodings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/Encodings/CMakeFiles/Encodings.dir/rule
@@ -1271,12 +1271,12 @@ poco/Encodings/CMakeFiles/Encodings.dir/clean:
 poco/XML/CMakeFiles/XML.dir/all: poco/Foundation/CMakeFiles/Foundation.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/XML/CMakeFiles/XML.dir/build.make poco/XML/CMakeFiles/XML.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/XML/CMakeFiles/XML.dir/build.make poco/XML/CMakeFiles/XML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=90,91,92,93,94,95,96 "Built target XML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=89,90,91,92,93,94,95,96 "Built target XML"
 .PHONY : poco/XML/CMakeFiles/XML.dir/all
 
 # Build rule for subdir invocation for target.
 poco/XML/CMakeFiles/XML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/XML/CMakeFiles/XML.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/XML/CMakeFiles/XML.dir/rule
@@ -1297,12 +1297,12 @@ poco/XML/CMakeFiles/XML.dir/clean:
 poco/JSON/CMakeFiles/JSON.dir/all: poco/Foundation/CMakeFiles/Foundation.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/JSON/CMakeFiles/JSON.dir/build.make poco/JSON/CMakeFiles/JSON.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/JSON/CMakeFiles/JSON.dir/build.make poco/JSON/CMakeFiles/JSON.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=66 "Built target JSON"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=65,66 "Built target JSON"
 .PHONY : poco/JSON/CMakeFiles/JSON.dir/all
 
 # Build rule for subdir invocation for target.
 poco/JSON/CMakeFiles/JSON.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/JSON/CMakeFiles/JSON.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/JSON/CMakeFiles/JSON.dir/rule
@@ -1325,12 +1325,12 @@ poco/Util/CMakeFiles/Util.dir/all: poco/XML/CMakeFiles/XML.dir/all
 poco/Util/CMakeFiles/Util.dir/all: poco/JSON/CMakeFiles/JSON.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/Util/CMakeFiles/Util.dir/build.make poco/Util/CMakeFiles/Util.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Util/CMakeFiles/Util.dir/build.make poco/Util/CMakeFiles/Util.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=87,88,89 "Built target Util"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=86,87,88 "Built target Util"
 .PHONY : poco/Util/CMakeFiles/Util.dir/all
 
 # Build rule for subdir invocation for target.
 poco/Util/CMakeFiles/Util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/Util/CMakeFiles/Util.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/Util/CMakeFiles/Util.dir/rule
@@ -1351,12 +1351,12 @@ poco/Util/CMakeFiles/Util.dir/clean:
 poco/Net/CMakeFiles/Net.dir/all: poco/Foundation/CMakeFiles/Foundation.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/Net/CMakeFiles/Net.dir/build.make poco/Net/CMakeFiles/Net.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Net/CMakeFiles/Net.dir/build.make poco/Net/CMakeFiles/Net.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80 "Built target Net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79 "Built target Net"
 .PHONY : poco/Net/CMakeFiles/Net.dir/all
 
 # Build rule for subdir invocation for target.
 poco/Net/CMakeFiles/Net.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/Net/CMakeFiles/Net.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/Net/CMakeFiles/Net.dir/rule
@@ -1378,7 +1378,7 @@ poco/MongoDB/CMakeFiles/MongoDB.dir/all: poco/Foundation/CMakeFiles/Foundation.d
 poco/MongoDB/CMakeFiles/MongoDB.dir/all: poco/Net/CMakeFiles/Net.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/MongoDB/CMakeFiles/MongoDB.dir/build.make poco/MongoDB/CMakeFiles/MongoDB.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/MongoDB/CMakeFiles/MongoDB.dir/build.make poco/MongoDB/CMakeFiles/MongoDB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=68,69 "Built target MongoDB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=67,68,69 "Built target MongoDB"
 .PHONY : poco/MongoDB/CMakeFiles/MongoDB.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1405,12 +1405,12 @@ poco/Redis/CMakeFiles/Redis.dir/all: poco/Foundation/CMakeFiles/Foundation.dir/a
 poco/Redis/CMakeFiles/Redis.dir/all: poco/Net/CMakeFiles/Net.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/Redis/CMakeFiles/Redis.dir/build.make poco/Redis/CMakeFiles/Redis.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Redis/CMakeFiles/Redis.dir/build.make poco/Redis/CMakeFiles/Redis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=86 "Built target Redis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=85 "Built target Redis"
 .PHONY : poco/Redis/CMakeFiles/Redis.dir/all
 
 # Build rule for subdir invocation for target.
 poco/Redis/CMakeFiles/Redis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/Redis/CMakeFiles/Redis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/Redis/CMakeFiles/Redis.dir/rule
@@ -1432,12 +1432,12 @@ poco/Prometheus/CMakeFiles/Prometheus.dir/all: poco/Foundation/CMakeFiles/Founda
 poco/Prometheus/CMakeFiles/Prometheus.dir/all: poco/Net/CMakeFiles/Net.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/Prometheus/CMakeFiles/Prometheus.dir/build.make poco/Prometheus/CMakeFiles/Prometheus.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Prometheus/CMakeFiles/Prometheus.dir/build.make poco/Prometheus/CMakeFiles/Prometheus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=84,85 "Built target Prometheus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=84 "Built target Prometheus"
 .PHONY : poco/Prometheus/CMakeFiles/Prometheus.dir/all
 
 # Build rule for subdir invocation for target.
 poco/Prometheus/CMakeFiles/Prometheus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/Prometheus/CMakeFiles/Prometheus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/Prometheus/CMakeFiles/Prometheus.dir/rule
@@ -1460,7 +1460,7 @@ poco/JWT/CMakeFiles/JWT.dir/all: poco/JSON/CMakeFiles/JSON.dir/all
 poco/JWT/CMakeFiles/JWT.dir/all: poco/Crypto/CMakeFiles/Crypto.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/JWT/CMakeFiles/JWT.dir/build.make poco/JWT/CMakeFiles/JWT.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/JWT/CMakeFiles/JWT.dir/build.make poco/JWT/CMakeFiles/JWT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=67 "Built target JWT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num= "Built target JWT"
 .PHONY : poco/JWT/CMakeFiles/JWT.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1491,12 +1491,12 @@ poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/all: poco/Net/CMakeFiles/Net.dir/all
 poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/all: poco/Crypto/CMakeFiles/Crypto.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/build.make poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/build.make poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=81,82,83 "Built target NetSSL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=80,81,82 "Built target NetSSL"
 .PHONY : poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/all
 
 # Build rule for subdir invocation for target.
 poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/rule
@@ -1631,7 +1631,7 @@ poco/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/all: poco/Util/CM
 
 # Build rule for subdir invocation for target.
 poco/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/rule
@@ -1652,12 +1652,12 @@ poco/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/clean:
 poco/Zip/CMakeFiles/Zip.dir/all: poco/Foundation/CMakeFiles/Foundation.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/Zip/CMakeFiles/Zip.dir/build.make poco/Zip/CMakeFiles/Zip.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/Zip/CMakeFiles/Zip.dir/build.make poco/Zip/CMakeFiles/Zip.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=97,98,99 "Built target Zip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=97,98 "Built target Zip"
 .PHONY : poco/Zip/CMakeFiles/Zip.dir/all
 
 # Build rule for subdir invocation for target.
 poco/Zip/CMakeFiles/Zip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/Zip/CMakeFiles/Zip.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/Zip/CMakeFiles/Zip.dir/rule
@@ -1682,12 +1682,12 @@ poco/PageCompiler/CMakeFiles/PageCompiler.dir/all: poco/Util/CMakeFiles/Util.dir
 poco/PageCompiler/CMakeFiles/PageCompiler.dir/all: poco/Net/CMakeFiles/Net.dir/all
 	$(MAKE) $(MAKESILENT) -f poco/PageCompiler/CMakeFiles/PageCompiler.dir/build.make poco/PageCompiler/CMakeFiles/PageCompiler.dir/depend
 	$(MAKE) $(MAKESILENT) -f poco/PageCompiler/CMakeFiles/PageCompiler.dir/build.make poco/PageCompiler/CMakeFiles/PageCompiler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num= "Built target PageCompiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=83 "Built target PageCompiler"
 .PHONY : poco/PageCompiler/CMakeFiles/PageCompiler.dir/all
 
 # Build rule for subdir invocation for target.
 poco/PageCompiler/CMakeFiles/PageCompiler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/PageCompiler/CMakeFiles/PageCompiler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/PageCompiler/CMakeFiles/PageCompiler.dir/rule
@@ -1716,7 +1716,7 @@ poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/all: poco/Util/CMakeFiles/U
 
 # Build rule for subdir invocation for target.
 poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles 0
 .PHONY : poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/rule

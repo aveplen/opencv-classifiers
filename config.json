@@ -1,4 +1,15 @@
 {
+    "server": {
+        "address": "0.0.0.0:8080",
+        "timeout": 10000,
+        "max_queued": 100,
+        "max_threads": 4,
+        "statics_dir": "web"
+    },
+    "database": {
+        "connector": "SQLite",
+        "connection_string": "sqlite.sqlite"
+    },
     "models": [
         {
             "model_name": "ResNet50-caffe2",

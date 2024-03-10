@@ -22,11 +22,21 @@ add_executable(
   opencv-classifiers 
   main.cpp 
   data.cpp
-  statements_handler.cpp
-  classify_handler.cpp
   stacktrace.cpp
   model.cpp
   config.cpp
+  static.cpp
+  middleware.cpp
+
+  handler_factory.cpp
+
+  cors_middleware.cpp
+  logging_middleware.cpp
+  error_middleware.cpp
+
+  statements_handler.cpp
+  classify_handler.cpp
+  statics_handler.cpp
 )
 
 target_link_libraries(
