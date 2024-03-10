@@ -43,7 +43,9 @@ add_executable(
   main.cpp 
   data.cpp
   statements_handler.cpp
+  classify_handler.cpp
   stacktrace.cpp
+  model.cpp
 )
 
 target_link_libraries(

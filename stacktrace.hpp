@@ -14,7 +14,9 @@ class ExceptionWithTrace : public std::exception {
     const std::string message;
 
     ExceptionWithTrace(std::exception& base_exception);
+    ExceptionWithTrace(const std::string message);
     ExceptionWithTrace(std::exception& base_exception, const std::string message);
+
     const char* what() {
         return message.c_str();
     }

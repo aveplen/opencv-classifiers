@@ -1222,6 +1222,30 @@ File2Page/fast:
 	$(MAKE) $(MAKESILENT) -f poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/build.make poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/build
 .PHONY : File2Page/fast
 
+classify_handler.o: classify_handler.cpp.o
+.PHONY : classify_handler.o
+
+# target to build an object file
+classify_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o
+.PHONY : classify_handler.cpp.o
+
+classify_handler.i: classify_handler.cpp.i
+.PHONY : classify_handler.i
+
+# target to preprocess a source file
+classify_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i
+.PHONY : classify_handler.cpp.i
+
+classify_handler.s: classify_handler.cpp.s
+.PHONY : classify_handler.s
+
+# target to generate assembly for a file
+classify_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s
+.PHONY : classify_handler.cpp.s
+
 data.o: data.cpp.o
 .PHONY : data.o
 
@@ -1269,6 +1293,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+model.o: model.cpp.o
+.PHONY : model.o
+
+# target to build an object file
+model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/model.cpp.o
+.PHONY : model.cpp.o
+
+model.i: model.cpp.i
+.PHONY : model.i
+
+# target to preprocess a source file
+model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/model.cpp.i
+.PHONY : model.cpp.i
+
+model.s: model.cpp.s
+.PHONY : model.s
+
+# target to generate assembly for a file
+model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/model.cpp.s
+.PHONY : model.cpp.s
 
 stacktrace.o: stacktrace.cpp.o
 .PHONY : stacktrace.o
@@ -1436,12 +1484,18 @@ help:
 	@echo "... yaml-cpp-parse"
 	@echo "... yaml-cpp-read"
 	@echo "... yaml-cpp-sandbox"
+	@echo "... classify_handler.o"
+	@echo "... classify_handler.i"
+	@echo "... classify_handler.s"
 	@echo "... data.o"
 	@echo "... data.i"
 	@echo "... data.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model.o"
+	@echo "... model.i"
+	@echo "... model.s"
 	@echo "... stacktrace.o"
 	@echo "... stacktrace.i"
 	@echo "... stacktrace.s"

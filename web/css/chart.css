@@ -1,0 +1,24 @@
+.chart {
+    display: grid;
+    grid-template-columns: auto;
+    gap: .5em 0;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    grid-auto-columns: 1fr;
+
+    list-style-type: none;
+}
+
+.chart li {
+    background: var(--marked);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+    grid-column-start: 1;
+}
+
+.chart li span {
+    font-weight: bold;
+}

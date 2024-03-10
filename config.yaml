@@ -1,0 +1,12 @@
+models:
+  yolo-v8:
+    location: models/yolov8
+
+  resnet-50:
+    location: models/resnet50
+    preprocessing:
+      crop:
+        width: 250
+        height: 250
+      
+      

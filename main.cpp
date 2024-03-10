@@ -1,6 +1,7 @@
 #include "data.hpp"
 #define _GNU_SOURCE = 1
 
+#include "./classify_handler.hpp"
 #include "./stacktrace.hpp"
 #include "./statements_handler.hpp"
 #include "Poco/Data/SQLite/Connector.h"
@@ -252,6 +253,12 @@ class Factory : public Poco::Net::HTTPRequestHandlerFactory {
 
     private:
     Poco::Net::HTTPRequestHandler* createRequestHandler(const Poco::Net::HTTPServerRequest& request) override {
+        if (request.getMethod() == HTTPRequest::HTTP_POST) {
+            if (request.getURI() == "/classify") {
+                return new ErrorHandling(new ClassifyHandler());
+            }
+        }
+
         if (request.getMethod() != HTTPRequest::HTTP_GET) {
             return nullptr;
         }

@@ -111,10 +111,24 @@ CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s"
 	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp -o CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s
 
+CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
+CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o: classify_handler.cpp
+CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o"
+	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp
+
+CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i"
+	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp > CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i
+
+CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s"
+	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp -o CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s
+
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o: stacktrace.cpp
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o"
 	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o -MF CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp
 
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.i: cmake_force
@@ -125,12 +139,28 @@ CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s"
 	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp -o CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s
 
+CMakeFiles/opencv-classifiers.dir/model.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
+CMakeFiles/opencv-classifiers.dir/model.cpp.o: model.cpp
+CMakeFiles/opencv-classifiers.dir/model.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opencv-classifiers.dir/model.cpp.o"
+	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/model.cpp.o -MF CMakeFiles/opencv-classifiers.dir/model.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/model.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/model.cpp
+
+CMakeFiles/opencv-classifiers.dir/model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/model.cpp.i"
+	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/model.cpp > CMakeFiles/opencv-classifiers.dir/model.cpp.i
+
+CMakeFiles/opencv-classifiers.dir/model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/model.cpp.s"
+	/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/model.cpp -o CMakeFiles/opencv-classifiers.dir/model.cpp.s
+
 # Object files for target opencv-classifiers
 opencv__classifiers_OBJECTS = \
 "CMakeFiles/opencv-classifiers.dir/main.cpp.o" \
 "CMakeFiles/opencv-classifiers.dir/data.cpp.o" \
 "CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o" \
-"CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o"
+"CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o" \
+"CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o" \
+"CMakeFiles/opencv-classifiers.dir/model.cpp.o"
 
 # External object files for target opencv-classifiers
 opencv__classifiers_EXTERNAL_OBJECTS =
@@ -138,7 +168,9 @@ opencv__classifiers_EXTERNAL_OBJECTS =
 opencv-classifiers: CMakeFiles/opencv-classifiers.dir/main.cpp.o
 opencv-classifiers: CMakeFiles/opencv-classifiers.dir/data.cpp.o
 opencv-classifiers: CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o
+opencv-classifiers: CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o
 opencv-classifiers: CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o
+opencv-classifiers: CMakeFiles/opencv-classifiers.dir/model.cpp.o
 opencv-classifiers: CMakeFiles/opencv-classifiers.dir/build.make
 opencv-classifiers: /opt/homebrew/lib/libopencv_gapi.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_stitching.4.9.0.dylib
@@ -220,7 +252,7 @@ opencv-classifiers: lib/libPocoData.101.dylib
 opencv-classifiers: lib/libPocoNet.101.dylib
 opencv-classifiers: lib/libPocoFoundation.101.dylib
 opencv-classifiers: CMakeFiles/opencv-classifiers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable opencv-classifiers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable opencv-classifiers"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv-classifiers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

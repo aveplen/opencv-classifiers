@@ -16,6 +16,11 @@ const std::string message
     init(base_exception);
 };
 
+ExceptionWithTrace::ExceptionWithTrace(const std::string message)
+: message(message) {
+    this->stacktrace = boost::stacktrace::stacktrace();
+};
+
 void ExceptionWithTrace::init(std::exception& base_exception) {
     try {
         auto with_trace = dynamic_cast<ExceptionWithTrace&>(base_exception);
