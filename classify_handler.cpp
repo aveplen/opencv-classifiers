@@ -23,11 +23,35 @@
 #include <sstream>
 #include <string>
 #include <utility>
+#include <valarray>
 #include <vector>
+
+// =================== request ===================
 
 struct ClassifyRequest {
     std::string data;
+    std::optional<int> limit;
 };
+
+ClassifyRequest parse_request(std::istream& req_stream) {
+    Poco::JSON::Parser parser;
+    auto obj = parser.parse(req_stream)
+               .extract<Poco::JSON::Object::Ptr>();
+
+    auto req = ClassifyRequest{
+        .data = obj->get("data"),
+        .limit = std::nullopt,
+    };
+
+    if (obj->has("limit")) {
+        int limit_value = obj->get("limit");
+        req.limit = { limit_value };
+    }
+
+    return req;
+}
+
+// =================== response ===================
 
 struct ClassifyClassProb {
     std::string clazz;
@@ -74,6 +98,17 @@ struct ClassifyResponse {
     }
 };
 
+// =================== logic ===================
+
+struct MoreThenKey {
+    inline bool operator()(
+    const models::ClassifResult& res1,
+    const models::ClassifResult& res2
+    ) {
+        return res1.probability > res2.probability;
+    }
+};
+
 std::vector<ClassifyResponse>
 classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
     std::vector<ClassifyResponse> models_results;
@@ -93,15 +128,19 @@ classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
         std::vector<models::ClassifResult> results = model.classify(image);
         auto end = std::chrono::steady_clock::now();
 
-        long duration = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+        std::sort(results.begin(), results.end(), MoreThenKey());
+        int limit = req.limit.has_value() ? req.limit.value() : results.size();
+        std::vector<models::ClassifResult> slice(results.begin(), results.begin() + limit);
 
         std::vector<ClassifyClassProb> response_probs;
-        for (auto res : results) {
+        for (auto res : slice) {
             response_probs.push_back(ClassifyClassProb{
             .prob = res.probability,
             .clazz = res.class_name,
             });
         }
+
+        long duration = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
         models_results.push_back(
         ClassifyResponse{
@@ -117,6 +156,8 @@ classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
     return models_results;
 };
 
+// =================== handler ===================
+
 handlers::ClassifyHandler::ClassifyHandler(config::Config config)
 : m_config(std::move(config)){};
 
@@ -124,13 +165,7 @@ void handlers::ClassifyHandler::handleRequest(
 Poco::Net::HTTPServerRequest& request,
 Poco::Net::HTTPServerResponse& response
 ) {
-    Poco::JSON::Parser parser;
-    auto obj = parser.parse(request.stream())
-               .extract<Poco::JSON::Object::Ptr>();
-
-    auto req = ClassifyRequest{
-        .data = obj->get("data").extract<std::string>(),
-    };
+    ClassifyRequest req = parse_request(request.stream());
 
     std::vector<ClassifyResponse> results = classify(m_config.models, req);
     Poco::JSON::Array results_json;

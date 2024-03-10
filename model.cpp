@@ -122,15 +122,6 @@ bool need_transpose
   m_need_softmax(need_softmax),
   m_need_transpose(need_transpose){};
 
-struct MoreThenKey {
-    inline bool operator()(
-    const models::ClassifResult& res1,
-    const models::ClassifResult& res2
-    ) {
-        return res1.probability > res2.probability;
-    }
-};
-
 std::vector<models::ClassifResult> models::OnnxModel::classify(ImageSource& img_source) {
     utils::Pipeline pipeline = {
         new utils::ScaleToFit(cv::Size(m_image_width, m_image_height)),
@@ -153,7 +144,6 @@ std::vector<models::ClassifResult> models::OnnxModel::classify(ImageSource& img_
         });
     }
 
-    std::sort(results.begin(), results.end(), MoreThenKey());
     return results;
 };
 

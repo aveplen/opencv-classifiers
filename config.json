@@ -4,7 +4,7 @@
         "timeout": 10000,
         "max_queued": 100,
         "max_threads": 4,
-        "statics_dir": "web"
+        "statics_dir": "/Users/plenkinav/Projects/opencv-classifiers/web"
     },
     "database": {
         "connector": "SQLite",
@@ -13,8 +13,8 @@
     "models": [
         {
             "model_name": "ResNet50-caffe2",
-            "onnx_path": "models/resnet50-caffe2-v1-9.onnx",
-            "labels_path": "models/synset.txt",
+            "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet50-caffe2-v1-9.onnx",
+            "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
             "img_width": "224",
             "img_height": "224",
             "need_transpose": true,
@@ -22,8 +22,8 @@
         },
         {
             "model_name": "ResNet152-v2",
-            "onnx_path": "models/resnet152-v2-7.onnx",
-            "labels_path": "models/synset.txt",
+            "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet152-v2-7.onnx",
+            "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
             "img_width": "224",
             "img_height": "224",
             "need_transpose": true,
@@ -31,8 +31,8 @@
         },
         {
             "model_name": "YOLO-V8s-cls",
-            "onnx_path": "models/yolov8s-cls.onnx",
-            "labels_path": "models/synset.txt",
+            "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/yolov8s-cls.onnx",
+            "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
             "img_width": "224",
             "img_height": "224",
             "need_transpose": true,
