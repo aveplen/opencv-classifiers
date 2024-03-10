@@ -74,24 +74,6 @@ struct ClassifyResponse {
     }
 };
 
-cv::Mat crop_to_center(cv::Mat original, std::size_t width, std::size_t height) {
-    if (original.size().width < width) {
-        throw ExceptionWithTrace("Image width is less then horizontal crop bound");
-    }
-
-    if (original.size().height < height) {
-        throw ExceptionWithTrace("Image height is less then vertical crop bound");
-    }
-
-    std::size_t horz_pad = (original.size().width - width) / 2;
-    std::size_t vert_pad = (original.size().width - width) / 2;
-
-    return original(
-    cv::Range((int)horz_pad, (int)original.size().width - horz_pad),
-    cv::Range((int)vert_pad, (int)original.size().height - vert_pad)
-    );
-}
-
 std::vector<ClassifyResponse>
 classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
     std::vector<ClassifyResponse> models_results;
