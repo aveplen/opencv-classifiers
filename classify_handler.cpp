@@ -248,10 +248,3 @@ Poco::Net::HTTPServerResponse& response
     body.flush();
     std::cout << "classify 200" << std::endl;
 };
-
-struct ClassificationContext {
-    std::string model_name;
-    std::vector<models::ClassifResult> results;
-    unsigned long duration;
-    std::string duration_unit;
-};
