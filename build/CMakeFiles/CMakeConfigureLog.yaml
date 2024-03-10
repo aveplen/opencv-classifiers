@@ -11317,3 +11317,1508 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d7231/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d7231.dir/build.make CMakeFiles/cmTC_d7231.dir/build
+        Building CXX object CMakeFiles/cmTC_d7231.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_d7231.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_d7231.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_d7231/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9c76c/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9c76c.dir/build.make CMakeFiles/cmTC_9c76c.dir/build
+        Building CXX object CMakeFiles/cmTC_9c76c.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_9c76c.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_9c76c
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c76c.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9c76c.dir/atomic_int32.cpp.o -o cmTC_9c76c 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bdb35/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bdb35.dir/build.make CMakeFiles/cmTC_bdb35.dir/build
+        Building CXX object CMakeFiles/cmTC_bdb35.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_bdb35.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_bdb35
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb35.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bdb35.dir/native_syslog.cpp.o -o cmTC_bdb35 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-jZMpbl"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-jZMpbl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-jZMpbl'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_106a1/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_106a1.dir/build.make CMakeFiles/cmTC_106a1.dir/build
+        Building C object CMakeFiles/cmTC_106a1.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_106a1.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-jZMpbl/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-jZMpbl/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_106a1.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_106a1/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-SI5mOb"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-SI5mOb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-SI5mOb'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0b29f/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0b29f.dir/build.make CMakeFiles/cmTC_0b29f.dir/build
+        Building CXX object CMakeFiles/cmTC_0b29f.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_0b29f.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-SI5mOb/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-SI5mOb/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_0b29f.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_0b29f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c1b21/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c1b21.dir/build.make CMakeFiles/cmTC_c1b21.dir/build
+        Building CXX object CMakeFiles/cmTC_c1b21.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_c1b21.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_c1b21
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1b21.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c1b21.dir/test_compiler.cpp.o -o cmTC_c1b21 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dfc72/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dfc72.dir/build.make CMakeFiles/cmTC_dfc72.dir/build
+        Building CXX object CMakeFiles/cmTC_dfc72.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_dfc72.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_dfc72.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_dfc72/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16a2c/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_16a2c.dir/build.make CMakeFiles/cmTC_16a2c.dir/build
+        Building CXX object CMakeFiles/cmTC_16a2c.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_16a2c.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_16a2c
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16a2c.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_16a2c.dir/atomic_int32.cpp.o -o cmTC_16a2c 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53578/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_53578.dir/build.make CMakeFiles/cmTC_53578.dir/build
+        Building CXX object CMakeFiles/cmTC_53578.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_53578.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_53578
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53578.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_53578.dir/native_syslog.cpp.o -o cmTC_53578 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-VM584C"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-VM584C"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-VM584C'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_58e32/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_58e32.dir/build.make CMakeFiles/cmTC_58e32.dir/build
+        Building C object CMakeFiles/cmTC_58e32.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_58e32.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-VM584C/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-VM584C/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_58e32.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_58e32/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-E8n5L1"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-E8n5L1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-E8n5L1'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_93fcf/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_93fcf.dir/build.make CMakeFiles/cmTC_93fcf.dir/build
+        Building CXX object CMakeFiles/cmTC_93fcf.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_93fcf.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-E8n5L1/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-E8n5L1/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_93fcf.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_93fcf/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_34e62/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_34e62.dir/build.make CMakeFiles/cmTC_34e62.dir/build
+        Building CXX object CMakeFiles/cmTC_34e62.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_34e62.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_34e62
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34e62.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_34e62.dir/test_compiler.cpp.o -o cmTC_34e62 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ae28f/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ae28f.dir/build.make CMakeFiles/cmTC_ae28f.dir/build
+        Building CXX object CMakeFiles/cmTC_ae28f.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_ae28f.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_ae28f.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_ae28f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c1b0/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4c1b0.dir/build.make CMakeFiles/cmTC_4c1b0.dir/build
+        Building CXX object CMakeFiles/cmTC_4c1b0.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_4c1b0.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_4c1b0
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c1b0.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4c1b0.dir/atomic_int32.cpp.o -o cmTC_4c1b0 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8c724/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8c724.dir/build.make CMakeFiles/cmTC_8c724.dir/build
+        Building CXX object CMakeFiles/cmTC_8c724.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_8c724.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_8c724
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c724.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8c724.dir/native_syslog.cpp.o -o cmTC_8c724 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-6i5HJm"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-6i5HJm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-6i5HJm'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c5a1a/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c5a1a.dir/build.make CMakeFiles/cmTC_c5a1a.dir/build
+        Building C object CMakeFiles/cmTC_c5a1a.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_c5a1a.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-6i5HJm/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-6i5HJm/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_c5a1a.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_c5a1a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-bDemag"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-bDemag"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-bDemag'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c56e1/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c56e1.dir/build.make CMakeFiles/cmTC_c56e1.dir/build
+        Building CXX object CMakeFiles/cmTC_c56e1.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_c56e1.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-bDemag/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-bDemag/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_c56e1.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_c56e1/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7cc8a/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7cc8a.dir/build.make CMakeFiles/cmTC_7cc8a.dir/build
+        Building CXX object CMakeFiles/cmTC_7cc8a.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_7cc8a.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_7cc8a
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cc8a.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7cc8a.dir/test_compiler.cpp.o -o cmTC_7cc8a 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_223ec/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_223ec.dir/build.make CMakeFiles/cmTC_223ec.dir/build
+        Building CXX object CMakeFiles/cmTC_223ec.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_223ec.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_223ec.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_223ec/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb19f/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fb19f.dir/build.make CMakeFiles/cmTC_fb19f.dir/build
+        Building CXX object CMakeFiles/cmTC_fb19f.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_fb19f.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_fb19f
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb19f.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fb19f.dir/atomic_int32.cpp.o -o cmTC_fb19f 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eab27/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_eab27.dir/build.make CMakeFiles/cmTC_eab27.dir/build
+        Building CXX object CMakeFiles/cmTC_eab27.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_eab27.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_eab27
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eab27.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_eab27.dir/native_syslog.cpp.o -o cmTC_eab27 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-l4heEF"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-l4heEF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-l4heEF'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9954a/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9954a.dir/build.make CMakeFiles/cmTC_9954a.dir/build
+        Building C object CMakeFiles/cmTC_9954a.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_9954a.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-l4heEF/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-l4heEF/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_9954a.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_9954a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-qrwCqW"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-qrwCqW"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-qrwCqW'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fc371/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fc371.dir/build.make CMakeFiles/cmTC_fc371.dir/build
+        Building CXX object CMakeFiles/cmTC_fc371.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_fc371.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-qrwCqW/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-qrwCqW/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_fc371.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_fc371/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bbd17/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bbd17.dir/build.make CMakeFiles/cmTC_bbd17.dir/build
+        Building CXX object CMakeFiles/cmTC_bbd17.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_bbd17.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_bbd17
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbd17.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bbd17.dir/test_compiler.cpp.o -o cmTC_bbd17 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_55372/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_55372.dir/build.make CMakeFiles/cmTC_55372.dir/build
+        Building CXX object CMakeFiles/cmTC_55372.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_55372.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_55372.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_55372/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e2546/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e2546.dir/build.make CMakeFiles/cmTC_e2546.dir/build
+        Building CXX object CMakeFiles/cmTC_e2546.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_e2546.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_e2546
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2546.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e2546.dir/atomic_int32.cpp.o -o cmTC_e2546 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_55a6e/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_55a6e.dir/build.make CMakeFiles/cmTC_55a6e.dir/build
+        Building CXX object CMakeFiles/cmTC_55a6e.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_55a6e.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_55a6e
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55a6e.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_55a6e.dir/native_syslog.cpp.o -o cmTC_55a6e 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-0ligTt"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-0ligTt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-0ligTt'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0ab75/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0ab75.dir/build.make CMakeFiles/cmTC_0ab75.dir/build
+        Building C object CMakeFiles/cmTC_0ab75.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_0ab75.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-0ligTt/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-0ligTt/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_0ab75.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_0ab75/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-o5SDvg"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-o5SDvg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-o5SDvg'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2d49d/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2d49d.dir/build.make CMakeFiles/cmTC_2d49d.dir/build
+        Building CXX object CMakeFiles/cmTC_2d49d.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_2d49d.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-o5SDvg/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-o5SDvg/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_2d49d.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_2d49d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8491f/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8491f.dir/build.make CMakeFiles/cmTC_8491f.dir/build
+        Building CXX object CMakeFiles/cmTC_8491f.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_8491f.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_8491f
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8491f.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8491f.dir/test_compiler.cpp.o -o cmTC_8491f 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_56763/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_56763.dir/build.make CMakeFiles/cmTC_56763.dir/build
+        Building CXX object CMakeFiles/cmTC_56763.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_56763.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_56763.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_56763/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7928/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b7928.dir/build.make CMakeFiles/cmTC_b7928.dir/build
+        Building CXX object CMakeFiles/cmTC_b7928.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_b7928.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_b7928
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7928.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b7928.dir/atomic_int32.cpp.o -o cmTC_b7928 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9871c/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9871c.dir/build.make CMakeFiles/cmTC_9871c.dir/build
+        Building CXX object CMakeFiles/cmTC_9871c.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_9871c.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_9871c
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9871c.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9871c.dir/native_syslog.cpp.o -o cmTC_9871c 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-Pgs4ao"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-Pgs4ao"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-Pgs4ao'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_97cb0/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_97cb0.dir/build.make CMakeFiles/cmTC_97cb0.dir/build
+        Building C object CMakeFiles/cmTC_97cb0.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_97cb0.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-Pgs4ao/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-Pgs4ao/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_97cb0.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_97cb0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-tpkOaD"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-tpkOaD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-tpkOaD'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_61c82/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_61c82.dir/build.make CMakeFiles/cmTC_61c82.dir/build
+        Building CXX object CMakeFiles/cmTC_61c82.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_61c82.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-tpkOaD/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-tpkOaD/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_61c82.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_61c82/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2cfce/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2cfce.dir/build.make CMakeFiles/cmTC_2cfce.dir/build
+        Building CXX object CMakeFiles/cmTC_2cfce.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_2cfce.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_2cfce
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cfce.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2cfce.dir/test_compiler.cpp.o -o cmTC_2cfce 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:65 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_ROBUST"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b768b/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b768b.dir/build.make CMakeFiles/cmTC_b768b.dir/build
+        Building CXX object CMakeFiles/cmTC_b768b.dir/pthread_mutex_robust.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1   _XOPEN_SOURCE=600 _GNU_SOURCE=1 -o CMakeFiles/cmTC_b768b.dir/pthread_mutex_robust.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp: In function 'int main(int, char**)':
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:40: error: 'PTHREAD_MUTEX_ROBUST' was not declared in this scope; did you mean 'PTHREAD_MUTEX_DEFAULT'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |                                        ^~~~~~~~~~~~~~~~~~~~
+              |                                        PTHREAD_MUTEX_DEFAULT
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:17:5: error: 'pthread_mutexattr_setrobust' was not declared in this scope; did you mean 'pthread_mutexattr_settype'?
+           17 |     pthread_mutexattr_setrobust(&attr, PTHREAD_MUTEX_ROBUST);
+              |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              |     pthread_mutexattr_settype
+        /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/pthread-mutex-robust/pthread_mutex_robust.cpp:26:15: error: 'pthread_mutex_consistent' was not declared in this scope; did you mean 'pthread_mutex_init'?
+           26 |         err = pthread_mutex_consistent(&m);
+              |               ^~~~~~~~~~~~~~~~~~~~~~~~
+              |               pthread_mutex_init
+        make[1]: *** [CMakeFiles/cmTC_b768b.dir/pthread_mutex_robust.cpp.o] Error 1
+        make: *** [cmTC_b768b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:74 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_87dfe/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_87dfe.dir/build.make CMakeFiles/cmTC_87dfe.dir/build
+        Building CXX object CMakeFiles/cmTC_87dfe.dir/atomic_int32.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11 -DBOOST_ALL_NO_LIB=1 -isystem /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_87dfe.dir/atomic_int32.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/atomic-int32/atomic_int32.cpp
+        Linking CXX executable cmTC_87dfe
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87dfe.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_87dfe.dir/atomic_int32.cpp.o -o cmTC_87dfe 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "boost-cmake/libs/log.cmake:98 (try_compile)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_NATIVE_SYSLOG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/boost-cmake/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7ace9/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7ace9.dir/build.make CMakeFiles/cmTC_7ace9.dir/build
+        Building CXX object CMakeFiles/cmTC_7ace9.dir/native_syslog.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_7ace9.dir/native_syslog.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/_deps/boost-src/libs/log/config/native-syslog/native_syslog.cpp
+        Linking CXX executable cmTC_7ace9
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ace9.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7ace9.dir/native_syslog.cpp.o -o cmTC_7ace9 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-dDUKz0"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-dDUKz0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-dDUKz0'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f5e07/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f5e07.dir/build.make CMakeFiles/cmTC_f5e07.dir/build
+        Building C object CMakeFiles/cmTC_f5e07.dir/test_mpi.c.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-gcc-11   -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_f5e07.dir/test_mpi.c.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-dDUKz0/test_mpi.c
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-dDUKz0/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_f5e07.dir/test_mpi.c.o] Error 1
+        make: *** [cmTC_f5e07/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/homebrew/Cellar/cmake/3.27.1/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "boost-cmake/libs/mpi.cmake:1 (find_package)"
+      - "boost-cmake/CMakeLists.txt:85 (include)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-cT68rC"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-cT68rC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/boost-cmake/cmake/Modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-cT68rC'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_82b98/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_82b98.dir/build.make CMakeFiles/cmTC_82b98.dir/build
+        Building CXX object CMakeFiles/cmTC_82b98.dir/test_mpi.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=c++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_82b98.dir/test_mpi.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-cT68rC/test_mpi.cpp
+        /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/CMakeScratch/TryCompile-cT68rC/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_82b98.dir/test_mpi.cpp.o] Error 1
+        make: *** [cmTC_82b98/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "poco/cmake/CXX1x.cmake:25 (try_compile)"
+      - "poco/CMakeLists.txt:47 (check_for_cxx17_compiler)"
+    directories:
+      source: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+      binary: "/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/plenkinav/Projects/opencv-classifiers/poco/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "_COMPILER_TEST_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/plenkinav/Projects/opencv-classifiers/build/poco/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b70b6/fast
+        /Applications/Xcode-14.3.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b70b6.dir/build.make CMakeFiles/cmTC_b70b6.dir/build
+        Building CXX object CMakeFiles/cmTC_b70b6.dir/test_compiler.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -o CMakeFiles/cmTC_b70b6.dir/test_compiler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/poco/cmake/test_compiler.cpp
+        Linking CXX executable cmTC_b70b6
+        /opt/homebrew/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b70b6.dir/link.txt --verbose=1
+        /opt/homebrew/bin/aarch64-apple-darwin21-g++-11  -arch arm64 -isysroot /Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b70b6.dir/test_compiler.cpp.o -o cmTC_b70b6 
+        
+      exitCode: 0
+...

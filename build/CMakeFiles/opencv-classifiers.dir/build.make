@@ -223,8 +223,6 @@ opencv-classifiers: /opt/homebrew/lib/libopencv_wechat_qrcode.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_xfeatures2d.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_xobjdetect.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_xphoto.4.9.0.dylib
-opencv-classifiers: _deps/yaml-cpp-build/libyaml-cppd.a
-opencv-classifiers: _deps/logurugitrepo-build/liblogurud.2.1.0.dylib
 opencv-classifiers: boost-cmake/libboost_systemd.a
 opencv-classifiers: boost-cmake/libboost_threadd.a
 opencv-classifiers: boost-cmake/libboost_logd.a
