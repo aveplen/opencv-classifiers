@@ -32,10 +32,20 @@ class OnnxModel {
     private:
     cv::dnn::dnn4_v20231225::Net m_net;
     std::vector<std::string> m_class_names;
+    int m_image_width;
+    int m_image_height;
+    bool m_need_transpose;
     bool m_need_softmax;
 
     public:
-    OnnxModel(std::string model_path, std::string labels_path, bool need_softmax);
+    OnnxModel(
+    std::string model_path,
+    std::string labels_path,
+    int image_width,
+    int image_height,
+    bool need_softmax,
+    bool need_transpose
+    );
     ~OnnxModel() = default;
 
     std::vector<ClassifResult> classify(ImageSource& img_source);

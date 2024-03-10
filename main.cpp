@@ -1,3 +1,4 @@
+#include "config.hpp"
 #include "data.hpp"
 #define _GNU_SOURCE = 1
 
@@ -19,7 +20,6 @@
 #include "Poco/Path.h"
 #include "Poco/Util/ServerApplication.h"
 #include "boost/stacktrace.hpp"
-#include "config.h"
 #include <Poco/URI.h>
 #include <chrono>
 #include <cstddef>
@@ -246,16 +246,18 @@ class ErrorHandling : public HTTPRequestHandler {
 class Factory : public Poco::Net::HTTPRequestHandlerFactory {
     private:
     Poco::Data::Session& session;
+    config::ConfigReader& m_config_reader;
 
     public:
-    Factory(Poco::Data::Session& session)
-    : session(session){};
+    Factory(Poco::Data::Session& session, config::ConfigReader& config_reader)
+    : session(session), m_config_reader(config_reader){};
 
     private:
     Poco::Net::HTTPRequestHandler* createRequestHandler(const Poco::Net::HTTPServerRequest& request) override {
         if (request.getMethod() == HTTPRequest::HTTP_POST) {
             if (request.getURI() == "/classify") {
-                return new ErrorHandling(new ClassifyHandler());
+                config::Config config = m_config_reader.read_config();
+                return new ErrorHandling(new ClassifyHandler(config));
             }
         }
 
@@ -305,6 +307,8 @@ class Socket : public Poco::Net::Socket {
 class MyServerApplication : public Poco::Util::ServerApplication {
     private:
     int main(const std::vector<std::string>& args) override {
+        config::ConfigReader config_reader("./config.json", false);
+
         Poco::Data::SQLite::Connector::registerConnector();
         Poco::Data::Session session("SQLite", "sqlite.sqlite");
         Data::Image::create_table(session);
@@ -316,7 +320,7 @@ class MyServerApplication : public Poco::Util::ServerApplication {
 
         const ServerSocket socket(Socket("localhost:8080"));
 
-        Poco::Net::HTTPServer server(new Factory(session), socket, parameters);
+        Poco::Net::HTTPServer server(new Factory(session, config_reader), socket, parameters);
 
         server.start();
         waitForTerminationRequest();

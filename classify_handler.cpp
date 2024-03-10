@@ -22,28 +22,11 @@
 #include <opencv2/imgcodecs.hpp>
 #include <sstream>
 #include <string>
+#include <utility>
 #include <vector>
-
-std::vector<char> decodeBase64(std::string encoded) {
-    std::istringstream b64str(encoded);
-    std::ostringstream decoded;
-    Poco::Base64Decoder decoder(b64str);
-    std::copy(
-    std::istreambuf_iterator<char>(decoder),
-    std::istreambuf_iterator<char>(),
-    std::ostreambuf_iterator<char>(decoded)
-    );
-
-    std::string decoded_str = decoded.str();
-    std::vector<char> bytes(decoded_str.begin(), decoded_str.end());
-    return bytes;
-}
 
 struct ClassifyRequest {
     std::string data;
-    int width;
-    int height;
-    bool use_pipeline;
 };
 
 struct ClassifyClassProb {
@@ -109,7 +92,51 @@ cv::Mat crop_to_center(cv::Mat original, std::size_t width, std::size_t height) 
     );
 }
 
-std::vector<ClassifyResponse> classify(ClassifyRequest req);
+std::vector<ClassifyResponse>
+classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
+    std::vector<ClassifyResponse> models_results;
+
+    for (config::Model& model_settings : models_settings) {
+        models::OnnxModel model(
+        model_settings.onnx_path,
+        model_settings.labels_path,
+        model_settings.img_width,
+        model_settings.img_height,
+        model_settings.need_softmax,
+        model_settings.need_transpose
+        );
+
+        models::Base64Image image(req.data);
+        auto begin = std::chrono::steady_clock::now();
+        std::vector<models::ClassifResult> results = model.classify(image);
+        auto end = std::chrono::steady_clock::now();
+
+        long duration = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+
+        std::vector<ClassifyClassProb> response_probs;
+        for (auto res : results) {
+            response_probs.push_back(ClassifyClassProb{
+            .prob = res.probability,
+            .clazz = res.class_name,
+            });
+        }
+
+        models_results.push_back(
+        ClassifyResponse{
+        .model = model_settings.model_name,
+        .probs = response_probs,
+        .time_spent = TimeSpan{
+        .span = static_cast<unsigned long>(duration),
+        .unit = "microsecond",
+        } }
+        );
+    }
+
+    return models_results;
+};
+
+handlers::ClassifyHandler::ClassifyHandler(config::Config config)
+: m_config(std::move(config)){};
 
 void handlers::ClassifyHandler::handleRequest(
 Poco::Net::HTTPServerRequest& request,
@@ -121,12 +148,9 @@ Poco::Net::HTTPServerResponse& response
 
     auto req = ClassifyRequest{
         .data = obj->get("data").extract<std::string>(),
-        .use_pipeline = obj->get("use_pipeline").extract<bool>(),
-        // .width = obj->get("width").extract<int>(),
-        // .height = obj->get("height").extract<int>(),
     };
 
-    std::vector<ClassifyResponse> results = classify(req);
+    std::vector<ClassifyResponse> results = classify(m_config.models, req);
     Poco::JSON::Array results_json;
     for (auto& result : results) {
         results_json.add(result.toJson());
@@ -140,95 +164,9 @@ Poco::Net::HTTPServerResponse& response
     std::cout << "classify 200" << std::endl;
 };
 
-std::vector<ClassifyResponse> classify(ClassifyRequest req) {
-    if (req.use_pipeline) {
-        std::string model_path = "/Users/plenkinav/Projects/opencv-classifiers/models/resnet50-caffe2-v1-9.onnx";
-        std::string labels_path = "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt";
-        bool need_softmax = false;
-
-        models::OnnxModel model(model_path, labels_path, need_softmax);
-        models::Base64Image image(req.data);
-
-        auto begin = std::chrono::steady_clock::now();
-        std::vector<models::ClassifResult> results = model.classify(image);
-        auto end = std::chrono::steady_clock::now();
-
-        std::vector<ClassifyClassProb> response_probs;
-        for (auto res : results) {
-            response_probs.push_back(ClassifyClassProb{
-            .prob = res.probability,
-            .clazz = res.class_name,
-            });
-        }
-
-        long duration = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-        return {
-            ClassifyResponse{
-            .model = "resnet50-caffe2-v1-9.onnx",
-            .probs = response_probs,
-            .time_spent = TimeSpan{
-            .span = static_cast<unsigned long>(duration),
-            .unit = "microsecond",
-            },
-            }
-        };
-    }
-
-    std::vector<char> bytes = decodeBase64(req.data);
-
-    cv::Mat img = cv::imdecode(bytes, cv::IMREAD_COLOR);
-    cv::imwrite("original.jpg", img);
-    std::cout << "shape: " << img.size().width << " " << img.size().height << " " << img.channels() << std::endl;
-
-    // cv::Mat cropped = crop_to_center(img, 256, 256);
-    // cv::imwrite("cropped.jpg", cropped);
-    // std::cout << "shape: " << cropped.size().width << " " << cropped.size().height << " " << cropped.channels() << std::endl;
-
-    double scale = 0.01;
-    cv::Size size(224, 224);
-    cv::Scalar mean(104, 117, 123);
-
-    bool swapRB = true;
-    bool crop = true;
-    int ddepth = CV_32F;
-    cv::Mat blob = cv::dnn::blobFromImage(img, scale, size, mean, swapRB, crop, ddepth);
-
-    std::vector<std::string> class_names;
-    std::ifstream ifs("/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt");
-    std::string line;
-    while (getline(ifs, line)) {
-        class_names.push_back(line);
-    }
-
-    std::string model = "/Users/plenkinav/Projects/opencv-classifiers/models/resnet50-caffe2-v1-9.onnx";
-    auto net = cv::dnn::readNet(model);
-
-    net.setInput(blob);
-    cv::Mat outputs = net.forward();
-
-    std::cout << "width: " << outputs.size().width << " height: " << outputs.size().height << std::endl;
-
-    cv::Point classIdPoint;
-    double final_prob = 0.0;
-    minMaxLoc(outputs.reshape(1, 1), 0, &final_prob, 0, &classIdPoint);
-    int label_id = classIdPoint.x;
-
-    std::cout << outputs << std::endl;
-
-    // for (std::size_t i = 0; i < outputs.size().width; i++) {
-    //     cv::Point point = outputs.at<cv::Point>(0, i);
-    //     std::cout << "i: " << i << " point.x: " << point.y << " class_name: " << class_names[point.x] << std::endl;
-    // }
-
-    std::cout << "final_prob: " << final_prob << " class id: " << classIdPoint.x << " class: " << class_names[classIdPoint.x] << std::endl;
-
-    // minMaxLoc(outputs.reshape(1, 1), 0, &final_prob, 0, &classIdPoint);
-
-    // cv::Point classIdPoint;
-    // double final_prob;
-    // int label_id = classIdPoint.x;
-    // // Print predicted class.
-    // string out_text = format("%s, %.3f", (class_names[label_id].c_str()), final_prob);
-
-    return { ClassifyResponse{} };
+struct ClassificationContext {
+    std::string model_name;
+    std::vector<models::ClassifResult> results;
+    unsigned long duration;
+    std::string duration_unit;
 };

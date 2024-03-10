@@ -107,8 +107,20 @@ std::vector<std::string> read_lines(std::string filename) {
     return lines;
 };
 
-models::OnnxModel::OnnxModel(std::string model_path, std::string labels_path, bool need_softmax)
-: m_net(cv::dnn::readNet(model_path)), m_class_names(read_lines(labels_path)), m_need_softmax(need_softmax){};
+models::OnnxModel::OnnxModel(
+std::string model_path,
+std::string labels_path,
+int image_width,
+int image_height,
+bool need_softmax,
+bool need_transpose
+)
+: m_net(cv::dnn::readNet(model_path)),
+  m_class_names(read_lines(labels_path)),
+  m_image_width(image_width),
+  m_image_height(image_height),
+  m_need_softmax(need_softmax),
+  m_need_transpose(need_transpose){};
 
 struct MoreThenKey {
     inline bool operator()(
@@ -121,29 +133,20 @@ struct MoreThenKey {
 
 std::vector<models::ClassifResult> models::OnnxModel::classify(ImageSource& img_source) {
     utils::Pipeline pipeline = {
-        new utils::ScaleToFit(cv::Size(224, 224)),
-        new utils::CropToFit(cv::Size(224, 224)),
-        new utils::Transpose(),
+        new utils::ScaleToFit(cv::Size(m_image_width, m_image_height)),
+        new utils::CropToFit(cv::Size(m_image_width, m_image_height)),
+        m_need_transpose ? new utils::Transpose() : nullptr,
         new utils::Classify(m_net),
         m_need_softmax ? new utils::SoftMax() : nullptr,
     };
 
     cv::Mat pred = pipeline.apply(img_source.to_mat());
 
-    double final_prob;
-    cv::Point classIdPoint;
-    minMaxLoc(pred.reshape(1, 1), 0, &final_prob, 0, &classIdPoint);
-    std::cout << classIdPoint.x << std::endl;
-
-
     std::vector<double> probs;
     pred.reshape(1, 1).copyTo(probs);
 
-
     std::vector<models::ClassifResult> results;
     for (std::size_t i = 0; i < probs.size(); i++) {
-        // std::cout << i << " " << m_class_names[i] << " " << probs[i] << std::endl;
-
         results.push_back(models::ClassifResult{
         .probability = probs[i],
         .class_name = m_class_names[i],

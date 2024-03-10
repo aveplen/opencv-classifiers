@@ -1246,6 +1246,30 @@ classify_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s
 .PHONY : classify_handler.cpp.s
 
+config.o: config.cpp.o
+.PHONY : config.o
+
+# target to build an object file
+config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/config.cpp.o
+.PHONY : config.cpp.o
+
+config.i: config.cpp.i
+.PHONY : config.i
+
+# target to preprocess a source file
+config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/config.cpp.i
+.PHONY : config.cpp.i
+
+config.s: config.cpp.s
+.PHONY : config.s
+
+# target to generate assembly for a file
+config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/config.cpp.s
+.PHONY : config.cpp.s
+
 data.o: data.cpp.o
 .PHONY : data.o
 
@@ -1487,6 +1511,9 @@ help:
 	@echo "... classify_handler.o"
 	@echo "... classify_handler.i"
 	@echo "... classify_handler.s"
+	@echo "... config.o"
+	@echo "... config.i"
+	@echo "... config.s"
 	@echo "... data.o"
 	@echo "... data.i"
 	@echo "... data.s"

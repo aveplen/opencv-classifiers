@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp" "CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/config.cpp" "CMakeFiles/opencv-classifiers.dir/config.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/config.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/data.cpp" "CMakeFiles/opencv-classifiers.dir/data.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/data.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/main.cpp" "CMakeFiles/opencv-classifiers.dir/main.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/main.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/model.cpp" "CMakeFiles/opencv-classifiers.dir/model.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/model.cpp.o.d"

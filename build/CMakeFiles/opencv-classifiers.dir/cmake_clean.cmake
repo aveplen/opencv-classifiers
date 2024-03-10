@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o"
   "CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o.d"
+  "CMakeFiles/opencv-classifiers.dir/config.cpp.o"
+  "CMakeFiles/opencv-classifiers.dir/config.cpp.o.d"
   "CMakeFiles/opencv-classifiers.dir/data.cpp.o"
   "CMakeFiles/opencv-classifiers.dir/data.cpp.o.d"
   "CMakeFiles/opencv-classifiers.dir/main.cpp.o"

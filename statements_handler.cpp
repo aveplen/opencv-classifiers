@@ -13,7 +13,6 @@
 #include "Poco/Net/ServerSocketImpl.h"
 #include "Poco/Path.h"
 #include "Poco/Util/ServerApplication.h"
-#include "config.h"
 #include <Poco/URI.h>
 #include <chrono>
 #include <cstddef>
