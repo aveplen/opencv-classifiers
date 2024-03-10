@@ -1,24 +1,31 @@
 .chart {
-    display: grid;
-    grid-template-columns: auto;
-    gap: .5em 0;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    grid-auto-columns: 1fr;
-
-    list-style-type: none;
+    border: 2px solid var(--preformatted);
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-collapse: separate;
 }
 
-.chart li {
-    background: var(--marked);
+.chart td {
+    background: var(--bg);
+    border: none;
+}
+
+.chart .chart-label {
+    width: 30%;
+    border-right: 2px solid black;
+}
+
+.chart .bar-wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0.25rem 0.5rem;
-    grid-column-start: 1;
 }
 
-.chart li span {
+.chart .chart-percent {
+    position: absolute;
     font-weight: bold;
+}
+
+.chart .chart-bar {
+    background: var(--marked);
+    padding-top: 10px;
 }

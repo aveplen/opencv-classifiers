@@ -49,9 +49,7 @@ const FileUploadForm = ({ uploadUrl, setResults }) => {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        width: 100,
-                        height: 100,
-                        "use_pipeline": true,
+                        limit: 3,
                         data: base64data,
                     }),
                 });
@@ -80,7 +78,7 @@ const FileUploadForm = ({ uploadUrl, setResults }) => {
             >
                 <div className="form-input">
                     <input className="hidden" type="file" onChange={handleFileChange} id="actual-btn" />
-                    <label for="actual-btn">Choose File</label>
+                    <label htmlFor="actual-btn">Choose File</label>
                     <span id="file-chosen">{!!file ? file.name : "No file chosen"}</span>
                 </div>
 

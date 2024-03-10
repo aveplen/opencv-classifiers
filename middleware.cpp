@@ -7,6 +7,6 @@ Poco::Net::HTTPRequestHandler* base_handler
 
 handlers::Middleware::Middleware(){};
 
-handlers::Middleware::~Middleware() {
-    delete m_base_handler;
+handlers::Middleware::~Middleware(){
+    // delete m_base_handler;
 };
