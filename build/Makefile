@@ -923,6 +923,30 @@ handler_factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s
 .PHONY : handler_factory.cpp.s
 
+history.o: history.cpp.o
+.PHONY : history.o
+
+# target to build an object file
+history.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history.cpp.o
+.PHONY : history.cpp.o
+
+history.i: history.cpp.i
+.PHONY : history.i
+
+# target to preprocess a source file
+history.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history.cpp.i
+.PHONY : history.cpp.i
+
+history.s: history.cpp.s
+.PHONY : history.s
+
+# target to generate assembly for a file
+history.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history.cpp.s
+.PHONY : history.cpp.s
+
 logging_middleware.o: logging_middleware.cpp.o
 .PHONY : logging_middleware.o
 
@@ -1193,6 +1217,9 @@ help:
 	@echo "... handler_factory.o"
 	@echo "... handler_factory.i"
 	@echo "... handler_factory.s"
+	@echo "... history.o"
+	@echo "... history.i"
+	@echo "... history.s"
 	@echo "... logging_middleware.o"
 	@echo "... logging_middleware.i"
 	@echo "... logging_middleware.s"

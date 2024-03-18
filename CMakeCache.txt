@@ -838,7 +838,7 @@ NetSSL_LIB_DEPENDS:STATIC=general;Poco::Crypto;general;Poco::Util;general;Poco::
 Net_LIB_DEPENDS:STATIC=general;Poco::Foundation;
 
 //Specify the directory containing sql.h.
-ODBC_INCLUDE_DIR:PATH=ODBC_INCLUDE_DIR-NOTFOUND
+ODBC_INCLUDE_DIR:PATH=/opt/homebrew/include
 
 //Specify the ODBC driver manager library here.
 ODBC_LIBRARY:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libiodbc.tbd
@@ -1010,6 +1010,9 @@ pkgcfg_lib_PC_APR_apr-1:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Develop
 
 //Path to a library.
 pkgcfg_lib_PC_APR_pthread:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libpthread.tbd
+
+//Path to a library.
+pkgcfg_lib_PC_ODBC_odbc:FILEPATH=/opt/homebrew/Cellar/unixodbc/2.3.12/lib/libodbc.dylib
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/opt/homebrew/Cellar/openssl@3/3.2.1/lib/libcrypto.dylib
@@ -1278,8 +1281,10 @@ FIND_PACKAGE_MESSAGE_DETAILS_APR:INTERNAL=[/Applications/Xcode-14.3.1.app/Conten
 FIND_PACKAGE_MESSAGE_DETAILS_APRUTIL:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/apr-1][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libaprutil-1.tbd][v1.5.4()]
 //Details about finding BZip2
 FIND_PACKAGE_MESSAGE_DETAILS_BZip2:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libbz2.tbd][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include][v1.0.8()]
+//Details about finding ODBC
+FIND_PACKAGE_MESSAGE_DETAILS_ODBC:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libiodbc.tbd][/opt/homebrew/include][v()]
 //Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/opt/homebrew/Cellar/opencv/4.9.0_3][v4.9.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/opt/homebrew/Cellar/opencv/4.9.0_5][v4.9.0()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/opt/homebrew/Cellar/openssl@3/3.2.1/lib/libcrypto.dylib][/opt/homebrew/Cellar/openssl@3/3.2.1/include][c ][v3.2.1()]
 //Details about finding Threads
@@ -1611,27 +1616,37 @@ PC_MYSQL_mysqlclient_INCLUDEDIR:INTERNAL=
 PC_MYSQL_mysqlclient_LIBDIR:INTERNAL=
 PC_MYSQL_mysqlclient_PREFIX:INTERNAL=
 PC_MYSQL_mysqlclient_VERSION:INTERNAL=
-PC_ODBC_CFLAGS:INTERNAL=
+PC_ODBC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/unixodbc/2.3.12/include
 PC_ODBC_CFLAGS_I:INTERNAL=
 PC_ODBC_CFLAGS_OTHER:INTERNAL=
-PC_ODBC_FOUND:INTERNAL=
-PC_ODBC_INCLUDEDIR:INTERNAL=
-PC_ODBC_LIBDIR:INTERNAL=
+PC_ODBC_FOUND:INTERNAL=1
+PC_ODBC_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/include
+PC_ODBC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/include
+PC_ODBC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/unixodbc/2.3.12/lib;-lodbc
+PC_ODBC_LDFLAGS_OTHER:INTERNAL=
+PC_ODBC_LIBDIR:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/lib
+PC_ODBC_LIBRARIES:INTERNAL=odbc
+PC_ODBC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/lib
 PC_ODBC_LIBS:INTERNAL=
 PC_ODBC_LIBS_L:INTERNAL=
 PC_ODBC_LIBS_OTHER:INTERNAL=
 PC_ODBC_LIBS_PATHS:INTERNAL=
-PC_ODBC_MODULE_NAME:INTERNAL=
-PC_ODBC_PREFIX:INTERNAL=
-PC_ODBC_STATIC_CFLAGS:INTERNAL=
+PC_ODBC_MODULE_NAME:INTERNAL=odbc
+PC_ODBC_PREFIX:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12
+PC_ODBC_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/unixodbc/2.3.12/include
 PC_ODBC_STATIC_CFLAGS_I:INTERNAL=
 PC_ODBC_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_ODBC_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/include
+PC_ODBC_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/unixodbc/2.3.12/lib;-lodbc;-lltdl
+PC_ODBC_STATIC_LDFLAGS_OTHER:INTERNAL=
 PC_ODBC_STATIC_LIBDIR:INTERNAL=
+PC_ODBC_STATIC_LIBRARIES:INTERNAL=odbc;ltdl
+PC_ODBC_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/lib
 PC_ODBC_STATIC_LIBS:INTERNAL=
 PC_ODBC_STATIC_LIBS_L:INTERNAL=
 PC_ODBC_STATIC_LIBS_OTHER:INTERNAL=
 PC_ODBC_STATIC_LIBS_PATHS:INTERNAL=
-PC_ODBC_VERSION:INTERNAL=
+PC_ODBC_VERSION:INTERNAL=2.3.12
 PC_ODBC_odbc_INCLUDEDIR:INTERNAL=
 PC_ODBC_odbc_LIBDIR:INTERNAL=
 PC_ODBC_odbc_PREFIX:INTERNAL=
@@ -1703,6 +1718,7 @@ _OPENSSL_openssl_PREFIX:INTERNAL=
 _OPENSSL_openssl_VERSION:INTERNAL=
 __pkg_config_arguments_PC_APR:INTERNAL=QUIET;apr-1
 __pkg_config_arguments_PC_APRUTIL:INTERNAL=QUIET;apr-util-1
+__pkg_config_arguments_PC_ODBC:INTERNAL=QUIET;odbc
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
 __pkg_config_checked_MPI_CXX_PKG:INTERNAL=1
 __pkg_config_checked_MPI_C_PKG:INTERNAL=1
@@ -1733,9 +1749,11 @@ pkgcfg_lib_PC_APRUTIL_sqlite3-ADVANCED:INTERNAL=1
 pkgcfg_lib_PC_APR_apr-1-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_APR_pthread
 pkgcfg_lib_PC_APR_pthread-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_ODBC_odbc
+pkgcfg_lib_PC_ODBC_odbc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
 pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib
+prefix_result:INTERNAL=/opt/homebrew/Cellar/unixodbc/2.3.12/lib
 

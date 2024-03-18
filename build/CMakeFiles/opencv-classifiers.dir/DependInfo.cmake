@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/plenkinav/Projects/opencv-classifiers/data.cpp" "CMakeFiles/opencv-classifiers.dir/data.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/data.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp" "CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp" "CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o.d"
+  "/Users/plenkinav/Projects/opencv-classifiers/history.cpp" "CMakeFiles/opencv-classifiers.dir/history.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/history.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp" "CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/main.cpp" "CMakeFiles/opencv-classifiers.dir/main.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/main.cpp.o.d"
   "/Users/plenkinav/Projects/opencv-classifiers/middleware.cpp" "CMakeFiles/opencv-classifiers.dir/middleware.cpp.o" "gcc" "CMakeFiles/opencv-classifiers.dir/middleware.cpp.o.d"

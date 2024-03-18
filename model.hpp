@@ -46,6 +46,7 @@ class OnnxModel {
     bool need_softmax,
     bool need_transpose
     );
+
     ~OnnxModel() = default;
 
     std::vector<ClassifResult> classify(ImageSource& img_source);

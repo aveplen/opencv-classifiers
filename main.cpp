@@ -1,8 +1,6 @@
-#include "config.hpp"
-#include "data.hpp"
-
 #include "./classify_handler.hpp"
 #include "./handler_factory.hpp"
+#include "./history.hpp"
 #include "./stacktrace.hpp"
 #include "./statements_handler.hpp"
 #include "Poco/Data/SQLite/Connector.h"
@@ -20,6 +18,9 @@
 #include "Poco/Path.h"
 #include "Poco/Util/ServerApplication.h"
 #include "boost/stacktrace.hpp"
+#include "config.hpp"
+#include "data.hpp"
+#include "history.hpp"
 #include <Poco/URI.h>
 #include <chrono>
 #include <cstddef>
@@ -74,6 +75,9 @@ class MyServerApplication : public Poco::Util::ServerApplication {
         Poco::Data::SQLite::Connector::registerConnector();
         Poco::Data::Session session(config.database.connector, config.database.connection_string);
         Data::Image::create_table(session);
+        data::HistoryDB::create_table(session);
+        data::HistoryEntryDB::create_table(session);
+        data::HistoryEntryResultDB::create_table(session);
 
         Poco::Net::HTTPServerParams::Ptr parameters = new Poco::Net::HTTPServerParams();
         parameters->setTimeout(config.server.timeout);

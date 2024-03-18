@@ -27,6 +27,7 @@ add_executable(
   config.cpp
   static.cpp
   middleware.cpp
+  history.cpp
 
   handler_factory.cpp
 

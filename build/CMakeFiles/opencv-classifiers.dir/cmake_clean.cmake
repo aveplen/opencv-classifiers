@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o.d"
   "CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o"
   "CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o.d"
+  "CMakeFiles/opencv-classifiers.dir/history.cpp.o"
+  "CMakeFiles/opencv-classifiers.dir/history.cpp.o.d"
   "CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o"
   "CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o.d"
   "CMakeFiles/opencv-classifiers.dir/main.cpp.o"
