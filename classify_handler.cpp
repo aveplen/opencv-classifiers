@@ -7,6 +7,7 @@
 #include "Poco/JSON/JSON.h"
 #include "Poco/JSON/Object.h"
 #include "Poco/JSON/Parser.h"
+#include "history.hpp"
 #include "poco/Foundation/src/zconf.h"
 #include <algorithm>
 #include <cassert>
@@ -30,7 +31,9 @@
 
 struct ClassifyRequest {
     std::string data;
-    std::optional<int> limit;
+    std::optional<int> client_limit;
+    std::optional<int> history_limit;
+    bool save_history;
 };
 
 ClassifyRequest parse_request(std::istream& req_stream) {
@@ -38,14 +41,29 @@ ClassifyRequest parse_request(std::istream& req_stream) {
     auto obj = parser.parse(req_stream)
                .extract<Poco::JSON::Object::Ptr>();
 
+    if (!obj->has("data")) {
+        throw ExceptionWithTrace("Request is missing 'data' field");
+    }
+
     auto req = ClassifyRequest{
         .data = obj->get("data"),
-        .limit = std::nullopt,
+        .client_limit = std::nullopt,
+        .history_limit = std::nullopt,
+        .save_history = false,
     };
 
-    if (obj->has("limit")) {
-        int limit_value = obj->get("limit");
-        req.limit = { limit_value };
+    if (obj->has("client_limit")) {
+        int limit_value = obj->get("client_limit");
+        req.client_limit = { limit_value };
+    }
+
+    if (obj->has("history_limit")) {
+        int limit_value = obj->get("history_limit");
+        req.history_limit = { limit_value };
+    }
+
+    if (obj->has("save_history")) {
+        req.save_history = obj->get("save_history");
     }
 
     return req;
@@ -189,11 +207,61 @@ std::optional<int> req_limit
     };
 }
 
+history::HistoryEntry build_history_entry(
+std::string model_name,
+unsigned long duration,
+std::string unit,
+std::vector<models::ClassifResult> results,
+std::optional<int> history_limit
+) {
+    std::sort(results.begin(), results.end(), MoreThenKey());
+    int limit = history_limit.has_value() ? history_limit.value() : results.size();
+    std::vector<models::ClassifResult> slice(results.begin(), results.begin() + limit);
+
+    double prob_sum = 0.0;
+    std::vector<history::HistoryEntryResult> entry_results;
+    for (std::size_t i = 0; i < slice.size(); i++) {
+        models::ClassifResult res = slice[i];
+
+        prob_sum += res.probability;
+
+        history::HistoryEntryResult entry_result(
+        -1,
+        -1, // todo
+        res.class_name,
+        res.probability,
+        -1
+        );
+
+        if (i == slice.size() - 1) {
+            prob_sum -= res.probability;
+            entry_result.m_probability = 1.0 - prob_sum;
+        }
+
+        entry_results.push_back(entry_result);
+    }
+
+    history::HistoryEntry entry(
+    -1,
+    model_name,
+    duration,
+    unit,
+    -1,
+    entry_results
+    );
+
+    return entry;
+}
+
 // =================== logic ===================
 
-std::vector<ClassifyResponse>
-classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
+std::vector<ClassifyResponse> classify(
+Poco::Data::Session& session,
+std::vector<config::Model> models_settings,
+ClassifyRequest req
+) {
     std::vector<ClassifyResponse> repsonse;
+    std::vector<history::HistoryEntry> history_entries;
 
     for (config::Model& model_settings : models_settings) {
         models::OnnxModel model(
@@ -212,13 +280,33 @@ classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
 
         unsigned long dur = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
+        history_entries.push_back(build_history_entry(
+        model_settings.model_name,
+        dur,
+        "microseconds",
+        cls_results,
+        req.history_limit
+        ));
+
         repsonse.push_back(build_response(
         model_settings.model_name,
         dur,
         "microseconds",
         cls_results,
-        req.limit
+        req.client_limit
         ));
+    }
+
+    history::History history(
+    -1,
+    req.data,
+    req.data,
+    "now",
+    history_entries
+    );
+
+    if (req.save_history) {
+        history.save(session);
     }
 
     return repsonse;
@@ -226,8 +314,8 @@ classify(std::vector<config::Model> models_settings, ClassifyRequest req) {
 
 // =================== handler ===================
 
-handlers::ClassifyHandler::ClassifyHandler(config::Config config)
-: m_config(std::move(config)){};
+handlers::ClassifyHandler::ClassifyHandler(Poco::Data::Session& session, config::Config config)
+: m_config(std::move(config)), m_session(session){};
 
 void handlers::ClassifyHandler::handleRequest(
 Poco::Net::HTTPServerRequest& request,
@@ -235,7 +323,7 @@ Poco::Net::HTTPServerResponse& response
 ) {
     ClassifyRequest req = parse_request(request.stream());
 
-    std::vector<ClassifyResponse> results = classify(m_config.models, req);
+    std::vector<ClassifyResponse> results = classify(m_session, m_config.models, req);
     Poco::JSON::Array results_json;
     for (auto& result : results) {
         results_json.add(result.toJson());

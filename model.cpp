@@ -19,6 +19,7 @@
 #include <opencv2/imgproc.hpp>
 #include <sstream>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 namespace utils {

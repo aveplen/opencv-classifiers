@@ -1,5 +1,3 @@
-// todo: implement bulk-save-load
-
 #include <unordered_map>
 #include <utility>
 #include <vector>
@@ -166,6 +164,50 @@ Poco::Data::Session& session
 
             her_db.create(session);
             her.m_id = her_db.id;
+        }
+    }
+};
+
+// todo: replace 'for { save() }' with 'save_all()'
+void history::History::save_all(
+Poco::Data::Session& session,
+std::vector<History*> histories
+) {
+    for (history::History*& h : histories) {
+        data::HistoryDB hdb{
+            .id = h->m_id,
+            .original_image = h->m_original_image,
+            .cropped_image = h->m_cropped_image,
+            .created_at = h->m_created_at,
+        };
+
+        hdb.create(session);
+        h->m_id = hdb.id;
+
+        for (history::HistoryEntry& he : h->m_entries) {
+            data::HistoryEntryDB he_db = data::HistoryEntryDB{
+                .id = he.m_id,
+                .model_name = he.m_model_name,
+                .duration = he.m_duration,
+                .time_unit = he.m_time_unit,
+                .history_id = h->m_id
+            };
+
+            he_db.create(session);
+            he.m_id = he_db.id;
+
+            for (history::HistoryEntryResult& her : he.m_results) {
+                data::HistoryEntryResultDB her_db = data::HistoryEntryResultDB{
+                    .id = her.m_id,
+                    .class_id = her.m_class_id,
+                    .class_name = her.m_class_name,
+                    .probability = her.m_probability,
+                    .history_entry_id = he.m_id
+                };
+
+                her_db.create(session);
+                her.m_id = her_db.id;
+            }
         }
     }
 };

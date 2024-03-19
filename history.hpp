@@ -68,13 +68,9 @@ class History {
     std::vector<HistoryEntry> entries
     );
 
-    static std::vector<History> all(
-    Poco::Data::Session& session
-    );
-
-    void save(
-    Poco::Data::Session& session
-    );
+    static std::vector<History> all(Poco::Data::Session& session);
+    static void save_all(Poco::Data::Session& session, std::vector<History*> histories);
+    void save(Poco::Data::Session& session);
 };
 
 } // namespace history
