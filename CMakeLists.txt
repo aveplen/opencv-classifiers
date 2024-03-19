@@ -38,6 +38,7 @@ add_executable(
   statements_handler.cpp
   classify_handler.cpp
   statics_handler.cpp
+  history_handler.cpp
 )
 
 target_link_libraries(

@@ -1,10 +1,13 @@
 #include "./handler_factory.hpp"
 #include "./classify_handler.hpp"
 #include "./error_middleware.hpp"
+#include "./history_handler.hpp"
 #include "./logging_middleware.hpp"
+#include "Poco/Net/HTTPRequest.h"
 #include "Poco/Net/HTTPRequestHandler.h"
 #include "Poco/Net/HTTPServerRequest.h"
 #include "cors_middleware.hpp"
+#include "history_handler.hpp"
 #include "logging_middleware.hpp"
 #include "middleware.hpp"
 #include "statements_handler.hpp"
@@ -23,7 +26,25 @@ const Poco::Net::HTTPServerRequest& request
             return new ErrorMiddleware(
             new LoggingMiddleware(
             new CorsMiddleware(
-            new ClassifyHandler(m_config_reader.read_config())
+            new ClassifyHandler(
+            m_session,
+            m_config_reader.read_config()
+            )
+            )
+            )
+            );
+        }
+    }
+
+    if (request.getMethod() == Poco::Net::HTTPRequest::HTTP_GET) {
+        if (request.getURI() == "/history") {
+            return new ErrorMiddleware(
+            new LoggingMiddleware(
+            new CorsMiddleware(
+            new HistoryHandler(
+            m_session,
+            m_config_reader.read_config()
+            )
             )
             )
             );

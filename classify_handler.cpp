@@ -27,6 +27,8 @@
 #include <valarray>
 #include <vector>
 
+namespace {
+
 // =================== request ===================
 
 struct ClassifyRequest {
@@ -311,6 +313,8 @@ ClassifyRequest req
 
     return repsonse;
 };
+
+} // namespace
 
 // =================== handler ===================
 

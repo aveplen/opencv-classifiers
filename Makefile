@@ -947,6 +947,30 @@ history.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history.cpp.s
 .PHONY : history.cpp.s
 
+history_handler.o: history_handler.cpp.o
+.PHONY : history_handler.o
+
+# target to build an object file
+history_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o
+.PHONY : history_handler.cpp.o
+
+history_handler.i: history_handler.cpp.i
+.PHONY : history_handler.i
+
+# target to preprocess a source file
+history_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history_handler.cpp.i
+.PHONY : history_handler.cpp.i
+
+history_handler.s: history_handler.cpp.s
+.PHONY : history_handler.s
+
+# target to generate assembly for a file
+history_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/history_handler.cpp.s
+.PHONY : history_handler.cpp.s
+
 logging_middleware.o: logging_middleware.cpp.o
 .PHONY : logging_middleware.o
 
@@ -1220,6 +1244,9 @@ help:
 	@echo "... history.o"
 	@echo "... history.i"
 	@echo "... history.s"
+	@echo "... history_handler.o"
+	@echo "... history_handler.i"
+	@echo "... history_handler.s"
 	@echo "... logging_middleware.o"
 	@echo "... logging_middleware.i"
 	@echo "... logging_middleware.s"
