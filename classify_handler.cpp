@@ -338,5 +338,4 @@ Poco::Net::HTTPServerResponse& response
     auto& body = response.send();
     results_json.stringify(body);
     body.flush();
-    std::cout << "classify 200" << std::endl;
 };

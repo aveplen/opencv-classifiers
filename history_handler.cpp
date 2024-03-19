@@ -43,10 +43,7 @@ HistoryRequest parse_request(std::istream& req_stream) {
     auto obj = parser.parse(req_stream)
                .extract<Poco::JSON::Object::Ptr>();
 
-    auto req = HistoryRequest{
-        .page = std::nullopt,
-        .page_size = std::nullopt,
-    };
+    auto req = HistoryRequest{};
 
     if (obj->has("page")) {
         int page_value = obj->get("page");
@@ -148,7 +145,7 @@ struct HistoryResponse {
         for (auto& history : this->histories) {
             histories.add(history.toJson());
         }
-        result.set("histories", this->histories);
+        result.set("histories", histories);
 
         return result;
     }

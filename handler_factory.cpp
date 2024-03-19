@@ -34,9 +34,7 @@ const Poco::Net::HTTPServerRequest& request
             )
             );
         }
-    }
 
-    if (request.getMethod() == Poco::Net::HTTPRequest::HTTP_GET) {
         if (request.getURI() == "/history") {
             return new ErrorMiddleware(
             new LoggingMiddleware(
