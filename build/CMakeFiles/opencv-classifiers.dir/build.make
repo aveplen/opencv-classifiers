@@ -73,225 +73,225 @@ CMakeFiles/opencv-classifiers.dir/main.cpp.o: CMakeFiles/opencv-classifiers.dir/
 CMakeFiles/opencv-classifiers.dir/main.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/main.cpp
 CMakeFiles/opencv-classifiers.dir/main.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv-classifiers.dir/main.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/main.cpp.o -MF CMakeFiles/opencv-classifiers.dir/main.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/main.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/main.cpp.o -MF CMakeFiles/opencv-classifiers.dir/main.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/main.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/main.cpp
 
 CMakeFiles/opencv-classifiers.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/main.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/main.cpp > CMakeFiles/opencv-classifiers.dir/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/main.cpp > CMakeFiles/opencv-classifiers.dir/main.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/main.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/main.cpp -o CMakeFiles/opencv-classifiers.dir/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/main.cpp -o CMakeFiles/opencv-classifiers.dir/main.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/data.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/data.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/data.cpp
 CMakeFiles/opencv-classifiers.dir/data.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opencv-classifiers.dir/data.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/data.cpp.o -MF CMakeFiles/opencv-classifiers.dir/data.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/data.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/data.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/data.cpp.o -MF CMakeFiles/opencv-classifiers.dir/data.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/data.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/data.cpp
 
 CMakeFiles/opencv-classifiers.dir/data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/data.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/data.cpp > CMakeFiles/opencv-classifiers.dir/data.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/data.cpp > CMakeFiles/opencv-classifiers.dir/data.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/data.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/data.cpp -o CMakeFiles/opencv-classifiers.dir/data.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/data.cpp -o CMakeFiles/opencv-classifiers.dir/data.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o -MF CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o -MF CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp
 
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp > CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp > CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp -o CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/stacktrace.cpp -o CMakeFiles/opencv-classifiers.dir/stacktrace.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/model.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/model.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/model.cpp
 CMakeFiles/opencv-classifiers.dir/model.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opencv-classifiers.dir/model.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/model.cpp.o -MF CMakeFiles/opencv-classifiers.dir/model.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/model.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/model.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/model.cpp.o -MF CMakeFiles/opencv-classifiers.dir/model.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/model.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/model.cpp
 
 CMakeFiles/opencv-classifiers.dir/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/model.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/model.cpp > CMakeFiles/opencv-classifiers.dir/model.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/model.cpp > CMakeFiles/opencv-classifiers.dir/model.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/model.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/model.cpp -o CMakeFiles/opencv-classifiers.dir/model.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/model.cpp -o CMakeFiles/opencv-classifiers.dir/model.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/config.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/config.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/config.cpp
 CMakeFiles/opencv-classifiers.dir/config.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opencv-classifiers.dir/config.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/config.cpp.o -MF CMakeFiles/opencv-classifiers.dir/config.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/config.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/config.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/config.cpp.o -MF CMakeFiles/opencv-classifiers.dir/config.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/config.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/config.cpp
 
 CMakeFiles/opencv-classifiers.dir/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/config.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/config.cpp > CMakeFiles/opencv-classifiers.dir/config.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/config.cpp > CMakeFiles/opencv-classifiers.dir/config.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/config.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/config.cpp -o CMakeFiles/opencv-classifiers.dir/config.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/config.cpp -o CMakeFiles/opencv-classifiers.dir/config.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/static.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/static.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/static.cpp
 CMakeFiles/opencv-classifiers.dir/static.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opencv-classifiers.dir/static.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/static.cpp.o -MF CMakeFiles/opencv-classifiers.dir/static.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/static.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/static.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/static.cpp.o -MF CMakeFiles/opencv-classifiers.dir/static.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/static.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/static.cpp
 
 CMakeFiles/opencv-classifiers.dir/static.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/static.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/static.cpp > CMakeFiles/opencv-classifiers.dir/static.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/static.cpp > CMakeFiles/opencv-classifiers.dir/static.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/static.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/static.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/static.cpp -o CMakeFiles/opencv-classifiers.dir/static.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/static.cpp -o CMakeFiles/opencv-classifiers.dir/static.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/middleware.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp
 CMakeFiles/opencv-classifiers.dir/middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opencv-classifiers.dir/middleware.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp
 
 CMakeFiles/opencv-classifiers.dir/middleware.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/middleware.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp > CMakeFiles/opencv-classifiers.dir/middleware.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp > CMakeFiles/opencv-classifiers.dir/middleware.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/middleware.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/middleware.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp -o CMakeFiles/opencv-classifiers.dir/middleware.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/middleware.cpp -o CMakeFiles/opencv-classifiers.dir/middleware.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/history.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/history.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/history.cpp
 CMakeFiles/opencv-classifiers.dir/history.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opencv-classifiers.dir/history.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/history.cpp.o -MF CMakeFiles/opencv-classifiers.dir/history.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/history.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/history.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/history.cpp.o -MF CMakeFiles/opencv-classifiers.dir/history.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/history.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/history.cpp
 
 CMakeFiles/opencv-classifiers.dir/history.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/history.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/history.cpp > CMakeFiles/opencv-classifiers.dir/history.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/history.cpp > CMakeFiles/opencv-classifiers.dir/history.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/history.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/history.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/history.cpp -o CMakeFiles/opencv-classifiers.dir/history.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/history.cpp -o CMakeFiles/opencv-classifiers.dir/history.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp
 CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o -MF CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o -MF CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp
 
 CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp > CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp > CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp -o CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/handler_factory.cpp -o CMakeFiles/opencv-classifiers.dir/handler_factory.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp
 CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp
 
 CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp > CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp > CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp -o CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/cors_middleware.cpp -o CMakeFiles/opencv-classifiers.dir/cors_middleware.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp
 CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp
 
 CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp > CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp > CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp -o CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/logging_middleware.cpp -o CMakeFiles/opencv-classifiers.dir/logging_middleware.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp
 CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o -MF CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp
 
 CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp > CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp > CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp -o CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/error_middleware.cpp -o CMakeFiles/opencv-classifiers.dir/error_middleware.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp
 CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp
 
 CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp > CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp > CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp -o CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/statements_handler.cpp -o CMakeFiles/opencv-classifiers.dir/statements_handler.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp
 CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp
 
 CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp > CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp > CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp -o CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/classify_handler.cpp -o CMakeFiles/opencv-classifiers.dir/classify_handler.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp
 CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp
 
 CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp > CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp > CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp -o CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/statics_handler.cpp -o CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s
 
 CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/flags.make
 CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o: /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp
 CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o: CMakeFiles/opencv-classifiers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o -MF CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o.d -o CMakeFiles/opencv-classifiers.dir/history_handler.cpp.o -c /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp
 
 CMakeFiles/opencv-classifiers.dir/history_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencv-classifiers.dir/history_handler.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp > CMakeFiles/opencv-classifiers.dir/history_handler.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp > CMakeFiles/opencv-classifiers.dir/history_handler.cpp.i
 
 CMakeFiles/opencv-classifiers.dir/history_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencv-classifiers.dir/history_handler.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp -o CMakeFiles/opencv-classifiers.dir/history_handler.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/plenkinav/Projects/opencv-classifiers/history_handler.cpp -o CMakeFiles/opencv-classifiers.dir/history_handler.cpp.s
 
 # Object files for target opencv-classifiers
 opencv__classifiers_OBJECTS = \
@@ -367,12 +367,12 @@ opencv-classifiers: /opt/homebrew/lib/libopencv_wechat_qrcode.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_xfeatures2d.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_xobjdetect.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_xphoto.4.9.0.dylib
-opencv-classifiers: boost-cmake/libboost_system.a
-opencv-classifiers: boost-cmake/libboost_thread.a
-opencv-classifiers: boost-cmake/libboost_log.a
-opencv-classifiers: boost-cmake/libboost_program_options.a
-opencv-classifiers: boost-cmake/libboost_chrono.a
-opencv-classifiers: boost-cmake/libboost_exception.a
+opencv-classifiers: boost-cmake/libboost_systemd.a
+opencv-classifiers: boost-cmake/libboost_threadd.a
+opencv-classifiers: boost-cmake/libboost_logd.a
+opencv-classifiers: boost-cmake/libboost_program_optionsd.a
+opencv-classifiers: boost-cmake/libboost_chronod.a
+opencv-classifiers: boost-cmake/libboost_exceptiond.a
 opencv-classifiers: lib/libPocoUtild.101.dylib
 opencv-classifiers: lib/libPocoDataSQLited.101.dylib
 opencv-classifiers: lib/libPocoEncodingsd.101.dylib
@@ -401,11 +401,11 @@ opencv-classifiers: /opt/homebrew/lib/libopencv_flann.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_photo.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_imgproc.4.9.0.dylib
 opencv-classifiers: /opt/homebrew/lib/libopencv_core.4.9.0.dylib
-opencv-classifiers: boost-cmake/libboost_thread.a
-opencv-classifiers: boost-cmake/libboost_chrono.a
-opencv-classifiers: boost-cmake/libboost_atomic.a
-opencv-classifiers: boost-cmake/libboost_date_time.a
-opencv-classifiers: boost-cmake/libboost_filesystem.a
+opencv-classifiers: boost-cmake/libboost_threadd.a
+opencv-classifiers: boost-cmake/libboost_chronod.a
+opencv-classifiers: boost-cmake/libboost_atomicd.a
+opencv-classifiers: boost-cmake/libboost_date_timed.a
+opencv-classifiers: boost-cmake/libboost_filesystemd.a
 opencv-classifiers: lib/libPocoDatad.101.dylib
 opencv-classifiers: lib/libPocoNetd.101.dylib
 opencv-classifiers: lib/libPocoFoundationd.101.dylib

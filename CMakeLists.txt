@@ -64,3 +64,53 @@ target_link_libraries(
     Poco::XML
     Poco::Zip
 )
+
+add_executable(
+  classifiers_test 
+  test.cpp 
+)
+
+target_link_libraries(
+    classifiers_test 
+    ${OpenCV_LIBS} 
+
+    Boost::system
+    Boost::thread
+    Boost::log
+    Boost::program_options
+    Boost::chrono
+    Boost::exception
+
+    Poco::Net
+    Poco::Util
+    Poco::Data
+    Poco::DataSQLite
+    Poco::Encodings
+    Poco::Foundation
+    Poco::JSON
+    Poco::MongoDB
+    Poco::Redis
+    Poco::XML
+    Poco::Zip
+)
+
+add_executable(
+  benchmark
+  benchmark.cpp 
+)
+
+target_link_libraries(
+    benchmark
+    ${OpenCV_LIBS} 
+    Poco::Net
+    Poco::Util
+    Poco::Data
+    Poco::DataSQLite
+    Poco::Encodings
+    Poco::Foundation
+    Poco::JSON
+    Poco::MongoDB
+    Poco::Redis
+    Poco::XML
+    Poco::Zip
+)

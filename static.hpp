@@ -4,6 +4,7 @@
 #include "Poco/Net/HTTPServerResponse.h"
 #include "Poco/URI.h"
 #include <string>
+#include <unordered_map>
 
 namespace utils {
 

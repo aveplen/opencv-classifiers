@@ -18,16 +18,16 @@
 APACHE2_INCLUDE_DIR:PATH=APACHE2_INCLUDE_DIR-NOTFOUND
 
 //Path to a file.
-APRUTIL_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/apr-1
+APRUTIL_INCLUDE_DIR:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/apr-1
 
 //Path to a library.
-APRUTIL_LIBRARY:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libaprutil-1.tbd
+APRUTIL_LIBRARY:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libaprutil-1.tbd
 
 //Path to a file.
-APR_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/apr-1
+APR_INCLUDE_DIR:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/apr-1
 
 //Path to a library.
-APR_LIBRARY:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libapr-1.tbd
+APR_LIBRARY:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libapr-1.tbd
 
 //Dependencies for the target
 ActiveRecord_LIB_DEPENDS:STATIC=general;Poco::Data;general;Poco::Foundation;
@@ -77,17 +77,14 @@ BOOST_URL_SHA256:STRING=d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=ON
 
-//Build the testing tree.
-BUILD_TESTING:BOOL=ON
-
 //Path to a file.
-BZIP2_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
+BZIP2_INCLUDE_DIR:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include
 
 //Path to a library.
 BZIP2_LIBRARY_DEBUG:FILEPATH=BZIP2_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-BZIP2_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libbz2.tbd
+BZIP2_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libbz2.tbd
 
 //Value Computed by CMake
 Boost-CMake_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/boost-cmake
@@ -102,10 +99,10 @@ Boost-CMake_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/boost
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
+CMAKE_AR:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
 //ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+CMAKE_ASM_COMPILER:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -130,7 +127,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -148,7 +145,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -247,7 +244,7 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
@@ -276,24 +273,24 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm
+CMAKE_NM:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm
 
 //Path to a program.
 CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump
 
 //Build architectures for OSX
 CMAKE_OSX_ARCHITECTURES:STRING=
 
 //Minimum OS X version to target for deployment (at runtime); newer
 // APIs weak linked. Set to empty string for default value.
-CMAKE_OSX_DEPLOYMENT_TARGET:STRING=12.1
+CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -304,23 +301,8 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=example
 
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.8.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=8
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
-
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
 
 //Path to a program.
 CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
@@ -379,23 +361,16 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip
+CMAKE_STRIP:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip
 
 //Path to a program.
-CMAKE_TAPI:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi
+CMAKE_TAPI:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
-
-//Path to the coverage program that CTest uses for performing coverage
-// inspection
-COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
-
-//Extra command line flags to pass to the coverage tool
-COVERAGE_EXTRA_FLAGS:STRING=-l
 
 //Enable to build OSX bundles
 CPACK_BINARY_BUNDLE:BOOL=OFF
@@ -451,32 +426,17 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
-//How many times to retry timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_COUNT:STRING=3
-
-//How long to wait between timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_DELAY:STRING=5
-
 //Dependencies for the target
 Crypto_LIB_DEPENDS:STATIC=general;Poco::Foundation;general;OpenSSL::SSL;general;OpenSSL::Crypto;
 
-//Maximum time allowed before CTest will kill the test.
-DART_TESTING_TIMEOUT:STRING=1500
+//Dependencies for the target
+DataODBC_LIB_DEPENDS:STATIC=general;Poco::Data;general;ODBC::ODBC;
 
 //Dependencies for the target
 DataSQLite_LIB_DEPENDS:STATIC=general;Poco::Data;
 
 //Dependencies for the target
 Data_LIB_DEPENDS:STATIC=general;Poco::Foundation;
-
-//Value Computed by CMake
-DisplayImage_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers
-
-//Value Computed by CMake
-DisplayImage_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-DisplayImage_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers
 
 //Enable ActiveRecord
 ENABLE_ACTIVERECORD:BOOL=ON
@@ -504,7 +464,7 @@ ENABLE_DATA:BOOL=ON
 ENABLE_DATA_MYSQL:BOOL=OFF
 
 //Enable Data ODBC
-ENABLE_DATA_ODBC:BOOL=OFF
+ENABLE_DATA_ODBC:BOOL=ON
 
 //Enable Data PosgreSQL
 ENABLE_DATA_POSTGRESQL:BOOL=OFF
@@ -599,40 +559,20 @@ FETCHCONTENT_QUIET:BOOL=ON
 // for Boost
 FETCHCONTENT_SOURCE_DIR_BOOST:PATH=
 
-//When not empty, overrides where to find pre-populated content
-// for LoguruGitRepo
-FETCHCONTENT_SOURCE_DIR_LOGURUGITREPO:PATH=
-
-//When not empty, overrides where to find pre-populated content
-// for yaml-cpp
-FETCHCONTENT_SOURCE_DIR_YAML-CPP:PATH=
-
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of Boost
 FETCHCONTENT_UPDATES_DISCONNECTED_BOOST:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of LoguruGitRepo
-FETCHCONTENT_UPDATES_DISCONNECTED_LOGURUGITREPO:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of yaml-cpp
-FETCHCONTENT_UPDATES_DISCONNECTED_YAML-CPP:BOOL=OFF
-
 //Force usage of OpenSSL even under windows
 FORCE_OPENSSL:BOOL=OFF
 
-//Path to a program.
-GITCOMMAND:FILEPATH=/opt/homebrew/bin/git
-
-//Git command line client
-GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
-
 //Iconv include directory
-ICONV_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
+ICONV_INCLUDE_DIR:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include
 
 //Iconv library
-ICONV_LIBRARY:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libiconv.tbd
+ICONV_LIBRARY:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libiconv.tbd
 
 //ICU derb executable
 ICU_DERB_EXECUTABLE:FILEPATH=ICU_DERB_EXECUTABLE-NOTFOUND
@@ -686,7 +626,7 @@ ICU_ICUINFO_EXECUTABLE:FILEPATH=ICU_ICUINFO_EXECUTABLE-NOTFOUND
 ICU_ICUPKG_EXECUTABLE:FILEPATH=ICU_ICUPKG_EXECUTABLE-NOTFOUND
 
 //ICU include directory
-ICU_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
+ICU_INCLUDE_DIR:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include
 
 //ICU makeconv executable
 ICU_MAKECONV_EXECUTABLE:FILEPATH=ICU_MAKECONV_EXECUTABLE-NOTFOUND
@@ -715,44 +655,8 @@ JSON_LIB_DEPENDS:STATIC=general;Poco::Foundation;
 //Dependencies for the target
 JWT_LIB_DEPENDS:STATIC=general;Poco::JSON;general;Poco::Crypto;
 
-//Build the project examples
-LOGURU_BUILD_EXAMPLES:BOOL=OFF
-
-//Build the tests
-LOGURU_BUILD_TESTS:BOOL=OFF
-
-//Generate the install target(s)
-LOGURU_INSTALL:BOOL=OFF
-
-LOGURU_PACKAGE_CONTACT:STRING=Emil Ernerfeldt <emil.ernerfeldt@gmail.com>
-
-LOGURU_PACKAGE_DESCRIPTION_FILE:STRING=/Users/plenkinav/Projects/opencv-classifiers/_deps/logurugitrepo-src/README.md
-
-LOGURU_PACKAGE_DESCRIPTION_SUMMARY:STRING=A lightweight C++ logging library
-
-LOGURU_PACKAGE_URL:STRING=https://github.com/emilk/loguru
-
-LOGURU_PACKAGE_VENDOR:STRING=Emil Ernerfeldt
-
-LOGURU_VERSION:STRING=2.1.0
-
-LOGURU_VERSION_MAJOR:STRING=2
-
-LOGURU_VERSION_MINOR:STRING=1
-
-LOGURU_VERSION_PATCH:STRING=0
-
-//Command to build the project
-MAKECOMMAND:STRING=/opt/homebrew/Cellar/cmake/3.27.1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
-
 //Message Compiler executable
 MC_EXECUTABLE:FILEPATH=MC_EXECUTABLE-NOTFOUND
-
-//Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
-
-//File that contains suppressions for the memory checker
-MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=MPIEXEC_EXECUTABLE-NOTFOUND
@@ -841,7 +745,7 @@ Net_LIB_DEPENDS:STATIC=general;Poco::Foundation;
 ODBC_INCLUDE_DIR:PATH=/opt/homebrew/include
 
 //Specify the ODBC driver manager library here.
-ODBC_LIBRARY:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libiodbc.tbd
+ODBC_LIBRARY:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libiodbc.tbd
 
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/opt/homebrew/Cellar/openssl@3/3.2.1/lib/libcrypto.dylib
@@ -903,9 +807,6 @@ RT_LIBRARY:FILEPATH=RT_LIBRARY-NOTFOUND
 //Dependencies for the target
 Redis_LIB_DEPENDS:STATIC=general;Poco::Net;
 
-//Name of the computer/site where compile is being run
-SITE:STRING=i111665742
-
 //Set static library postfix
 STATIC_POSTFIX:STRING=
 
@@ -915,50 +816,14 @@ Util_LIB_DEPENDS:STATIC=general;Poco::Foundation;general;Poco::XML;general;Poco:
 //Dependencies for the target
 XML_LIB_DEPENDS:STATIC=general;Poco::Foundation;
 
-//Build yaml-cpp shared library
-YAML_BUILD_SHARED_LIBS:BOOL=OFF
-
-//Value Computed by CMake
-YAML_CPP_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/_deps/yaml-cpp-build
-
-//Enable yaml-cpp contrib in library
-YAML_CPP_BUILD_CONTRIB:BOOL=ON
-
-//Enable parse tools
-YAML_CPP_BUILD_TOOLS:BOOL=ON
-
-//Disable uninstallation of yaml-cpp
-YAML_CPP_DISABLE_UNINSTALL:BOOL=OFF
-
-//Format source
-YAML_CPP_FORMAT_SOURCE:BOOL=OFF
-
-//Enable generation of yaml-cpp install targets
-YAML_CPP_INSTALL:BOOL=OFF
-
-//Path to install the CMake package to
-YAML_CPP_INSTALL_CMAKEDIR:STRING=lib/cmake/yaml-cpp
-
-//Value Computed by CMake
-YAML_CPP_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-YAML_CPP_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/_deps/yaml-cpp-src
-
-//Use Position-Independent Code 
-YAML_ENABLE_PIC:BOOL=ON
-
-//Use system googletest if found
-YAML_USE_SYSTEM_GTEST:BOOL=OFF
-
 //Path to a file.
-ZLIB_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
+ZLIB_INCLUDE_DIR:PATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include
 
 //Path to a library.
 ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-ZLIB_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd
+ZLIB_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libz.tbd
 
 //Dependencies for the target
 Zip_LIB_DEPENDS:STATIC=general;Poco::Foundation;
@@ -972,44 +837,35 @@ example_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 example_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers
 
-//Value Computed by CMake
-loguru_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/_deps/logurugitrepo-build
-
-//Value Computed by CMake
-loguru_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-loguru_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/_deps/logurugitrepo-src
+//Path to a library.
+pkgcfg_lib_PC_APRUTIL_apr-1:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libapr-1.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_apr-1:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libapr-1.tbd
+pkgcfg_lib_PC_APRUTIL_aprutil-1:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libaprutil-1.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_aprutil-1:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libaprutil-1.tbd
+pkgcfg_lib_PC_APRUTIL_expat:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_expat:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libexpat.tbd
+pkgcfg_lib_PC_APRUTIL_iconv:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libiconv.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_iconv:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libiconv.tbd
+pkgcfg_lib_PC_APRUTIL_lber:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/liblber.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_lber:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/liblber.tbd
+pkgcfg_lib_PC_APRUTIL_ldap:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/ldap.framework
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_ldap:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/ldap.framework
+pkgcfg_lib_PC_APRUTIL_pthread:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libpthread.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_pthread:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libpthread.tbd
+pkgcfg_lib_PC_APRUTIL_sqlite3:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libsqlite3.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APRUTIL_sqlite3:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libsqlite3.tbd
+pkgcfg_lib_PC_APR_apr-1:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libapr-1.tbd
 
 //Path to a library.
-pkgcfg_lib_PC_APR_apr-1:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libapr-1.tbd
-
-//Path to a library.
-pkgcfg_lib_PC_APR_pthread:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libpthread.tbd
+pkgcfg_lib_PC_APR_pthread:FILEPATH=/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libpthread.tbd
 
 //Path to a library.
 pkgcfg_lib_PC_ODBC_odbc:FILEPATH=/opt/homebrew/Cellar/unixodbc/2.3.12/lib/libodbc.dylib
@@ -1184,7 +1040,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1229,10 +1085,6 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_COMMAND
-COVERAGE_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
-COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_BUNDLE
 CPACK_BINARY_BUNDLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_DEB
@@ -1269,20 +1121,14 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
-CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
-CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DART_TESTING_TIMEOUT
-DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding APR
-FIND_PACKAGE_MESSAGE_DETAILS_APR:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/apr-1][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libapr-1.tbd][v1.5.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_APR:INTERNAL=[/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/apr-1][/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libapr-1.tbd][v1.5.2()]
 //Details about finding APRUTIL
-FIND_PACKAGE_MESSAGE_DETAILS_APRUTIL:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/apr-1][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libaprutil-1.tbd][v1.5.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_APRUTIL:INTERNAL=[/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/apr-1][/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libaprutil-1.tbd][v1.5.4()]
 //Details about finding BZip2
-FIND_PACKAGE_MESSAGE_DETAILS_BZip2:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libbz2.tbd][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include][v1.0.8()]
+FIND_PACKAGE_MESSAGE_DETAILS_BZip2:INTERNAL=[/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libbz2.tbd][/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include][v1.0.8()]
 //Details about finding ODBC
-FIND_PACKAGE_MESSAGE_DETAILS_ODBC:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libiodbc.tbd][/opt/homebrew/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_ODBC:INTERNAL=[/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libiodbc.tbd][/opt/homebrew/include][v()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/opt/homebrew/Cellar/opencv/4.9.0_5][v4.9.0()]
 //Details about finding OpenSSL
@@ -1290,11 +1136,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/opt/homebrew/Cellar/openssl@3/3.
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
-FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include][c ][v1.2.11()]
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GIT_EXECUTABLE
-GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libz.tbd][/Applications/Xcode-13.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include][c ][v1.2.11()]
 //Result of TRY_COMPILE
 HAVE_ATOMIC_INT32:INTERNAL=TRUE
 //Result of TRY_COMPILE
@@ -1353,12 +1195,6 @@ ICU_UCONV_EXECUTABLE-ADVANCED:INTERNAL=1
 ICU_UC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ICU_UC_LIBRARY_RELEASE
 ICU_UC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MAKECOMMAND
-MAKECOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_COMMAND
-MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
-MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
 MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
@@ -1659,8 +1495,6 @@ PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 PostgreSQL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PostgreSQL_LIBRARY
 PostgreSQL_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SITE
-SITE-ADVANCED:INTERNAL=1
 //Have symbol __ANDROID__
 USE_ANDROID:INTERNAL=0
 //Have symbol __APPLE__

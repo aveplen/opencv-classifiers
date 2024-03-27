@@ -1,4 +1,6 @@
 /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/opencv-classifiers.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/classifiers_test.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/benchmark.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/package.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/package_source.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/edit_cache.dir

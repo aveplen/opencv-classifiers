@@ -3,6 +3,7 @@
 #include "./history.hpp"
 #include "./stacktrace.hpp"
 #include "./statements_handler.hpp"
+#include "./svm.hpp"
 #include "Poco/Data/SQLite/Connector.h"
 #include "Poco/Data/Session.h"
 #include "Poco/Data/Statement.h"
@@ -40,7 +41,6 @@
 #include <unordered_map>
 #include <utility>
 #include <vector>
-
 
 #define _GNU_SOURCE = 1
 

@@ -14,6 +14,10 @@ Makefile
 *.pt
 *.onnx
 
+# Pictures
+**/*.png
+**/*.jpg
+
 # Prerequisites
 *.d
 
@@ -46,3 +50,6 @@ Makefile
 *.exe
 *.out
 *.app
+
+# Models
+**/*.dat

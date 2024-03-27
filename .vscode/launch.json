@@ -12,18 +12,18 @@
             "program": "${workspaceRoot}/opencv-classifiers"
         },
         {
-            "name": "Debug learn-svm",
+            "name": "Debug classifiers_test",
             "type": "lldb",
             "request": "launch",
-            "cwd": "${workspaceFolder}/learning",
-            "program": "${workspaceRoot}/learning/learn-svm"
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceRoot}/classifiers_test"
         },
         {
-            "name": "Debug learn-hog-svm",
+            "name": "Debug benchmark",
             "type": "lldb",
             "request": "launch",
-            "cwd": "${workspaceFolder}/learning",
-            "program": "${workspaceRoot}/learning/learn-hog-svm"
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceRoot}/benchmark"
         }
     ],
 }

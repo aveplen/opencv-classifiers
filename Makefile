@@ -195,6 +195,32 @@ opencv-classifiers/fast:
 .PHONY : opencv-classifiers/fast
 
 #=============================================================================
+# Target rules for targets named classifiers_test
+
+# Build rule for target.
+classifiers_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classifiers_test
+.PHONY : classifiers_test
+
+# fast build rule for target.
+classifiers_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classifiers_test.dir/build.make CMakeFiles/classifiers_test.dir/build
+.PHONY : classifiers_test/fast
+
+#=============================================================================
+# Target rules for targets named benchmark
+
+# Build rule for target.
+benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
+#=============================================================================
 # Target rules for targets named Boost_atomic
 
 # Build rule for target.
@@ -715,6 +741,19 @@ DataSQLite/fast:
 .PHONY : DataSQLite/fast
 
 #=============================================================================
+# Target rules for targets named DataODBC
+
+# Build rule for target.
+DataODBC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataODBC
+.PHONY : DataODBC
+
+# fast build rule for target.
+DataODBC/fast:
+	$(MAKE) $(MAKESILENT) -f poco/Data/ODBC/CMakeFiles/DataODBC.dir/build.make poco/Data/ODBC/CMakeFiles/DataODBC.dir/build
+.PHONY : DataODBC/fast
+
+#=============================================================================
 # Target rules for targets named ActiveRecord
 
 # Build rule for target.
@@ -778,6 +817,30 @@ File2Page: cmake_check_build_system
 File2Page/fast:
 	$(MAKE) $(MAKESILENT) -f poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/build.make poco/PageCompiler/File2Page/CMakeFiles/File2Page.dir/build
 .PHONY : File2Page/fast
+
+benchmark.o: benchmark.cpp.o
+.PHONY : benchmark.o
+
+# target to build an object file
+benchmark.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/benchmark.cpp.o
+.PHONY : benchmark.cpp.o
+
+benchmark.i: benchmark.cpp.i
+.PHONY : benchmark.i
+
+# target to preprocess a source file
+benchmark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/benchmark.cpp.i
+.PHONY : benchmark.cpp.i
+
+benchmark.s: benchmark.cpp.s
+.PHONY : benchmark.s
+
+# target to generate assembly for a file
+benchmark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/benchmark.cpp.s
+.PHONY : benchmark.cpp.s
 
 classify_handler.o: classify_handler.cpp.o
 .PHONY : classify_handler.o
@@ -1163,6 +1226,30 @@ statics_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv-classifiers.dir/build.make CMakeFiles/opencv-classifiers.dir/statics_handler.cpp.s
 .PHONY : statics_handler.cpp.s
 
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classifiers_test.dir/build.make CMakeFiles/classifiers_test.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classifiers_test.dir/build.make CMakeFiles/classifiers_test.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classifiers_test.dir/build.make CMakeFiles/classifiers_test.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1207,6 +1294,7 @@ help:
 	@echo "... Boost_wave"
 	@echo "... Crypto"
 	@echo "... Data"
+	@echo "... DataODBC"
 	@echo "... DataSQLite"
 	@echo "... Encodings"
 	@echo "... File2Page"
@@ -1222,7 +1310,12 @@ help:
 	@echo "... Util"
 	@echo "... XML"
 	@echo "... Zip"
+	@echo "... benchmark"
+	@echo "... classifiers_test"
 	@echo "... opencv-classifiers"
+	@echo "... benchmark.o"
+	@echo "... benchmark.i"
+	@echo "... benchmark.s"
 	@echo "... classify_handler.o"
 	@echo "... classify_handler.i"
 	@echo "... classify_handler.s"
@@ -1271,6 +1364,9 @@ help:
 	@echo "... statics_handler.o"
 	@echo "... statics_handler.i"
 	@echo "... statics_handler.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
