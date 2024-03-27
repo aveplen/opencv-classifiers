@@ -57,6 +57,7 @@ class History {
     long int m_id;
     std::string m_original_image;
     std::string m_cropped_image;
+    std::string m_preset_name;
     std::string m_created_at;
     std::vector<HistoryEntry> m_entries;
 
@@ -64,6 +65,7 @@ class History {
     long int id,
     std::string original_image,
     std::string cropped_image,
+    std::string preset_name,
     std::string created_at,
     std::vector<HistoryEntry> entries
     );
@@ -135,16 +137,17 @@ struct HistoryEntryDB {
 };
 
 
-const std::string HISTORY_CREATE_TABLE_STATEMENT = "CREATE TABLE IF NOT EXISTS history (id INTEGER PRIMARY KEY, original_image TEXT NOT NULL, cropped_image TEXT NOT NULL, created_at TEXT NOT NULL)";
+const std::string HISTORY_CREATE_TABLE_STATEMENT = "CREATE TABLE IF NOT EXISTS history (id INTEGER PRIMARY KEY, original_image TEXT NOT NULL, cropped_image TEXT NOT NULL, preset_name TEXT NOT NULL, created_at TEXT NOT NULL)";
 // const std::string HISTORY_SELECT_BY_ID_STATEMENT = "SELECT id, original_image, cropped_image, created_at FROM history WHERE id = ?";
-const std::string HISTORY_SELECT_ALL_STATEMENT = "SELECT id, original_image, cropped_image, created_at FROM history";
-const std::string HISTORY_INSERT_STATEMENT = "INSERT INTO history (original_image, cropped_image, created_at) VALUES(?, ?, ?) RETURNING id";
+const std::string HISTORY_SELECT_ALL_STATEMENT = "SELECT id, original_image, cropped_image, preset_name, created_at FROM history";
+const std::string HISTORY_INSERT_STATEMENT = "INSERT INTO history (original_image, cropped_image, preset_name, created_at) VALUES(?, ?, ?) RETURNING id";
 // const std::string HISTORY_UPDATE_STATEMENT = "UPDATE history SET original_image = ?, cropped_image = ? WHERE id = ?";
 
 struct HistoryDB {
     long int id = 0;
     std::string original_image;
     std::string cropped_image;
+    std::string preset_name;
     std::string created_at;
 
     static void create_table(

@@ -10,33 +10,70 @@
         "connector": "SQLite",
         "connection_string": "sqlite.sqlite"
     },
-    "models": [
+    "presets": [
         {
-            "model_name": "ResNet50-caffe2",
-            "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet50-caffe2-v1-9.onnx",
-            "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
-            "img_width": "224",
-            "img_height": "224",
-            "need_transpose": true,
-            "need_softmax": false
+            "preset_name": "Small models",
+            "models": [
+                {
+                    "model_name": "ResNet50-caffe2",
+                    "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet50-caffe2-v1-9.onnx",
+                    "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
+                    "img_width": "224",
+                    "img_height": "224",
+                    "need_transpose": true,
+                    "need_softmax": false
+                },
+                {
+                    "model_name": "ResNet152-v2",
+                    "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet152-v2-7.onnx",
+                    "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
+                    "img_width": "224",
+                    "img_height": "224",
+                    "need_transpose": true,
+                    "need_softmax": true
+                },
+                {
+                    "model_name": "YOLO-V8s-cls",
+                    "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/yolov8s-cls.onnx",
+                    "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
+                    "img_width": "224",
+                    "img_height": "224",
+                    "need_transpose": true,
+                    "need_softmax": false
+                }
+            ]
         },
         {
-            "model_name": "ResNet152-v2",
-            "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet152-v2-7.onnx",
-            "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
-            "img_width": "224",
-            "img_height": "224",
-            "need_transpose": true,
-            "need_softmax": true
-        },
-        {
-            "model_name": "YOLO-V8s-cls",
-            "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/yolov8s-cls.onnx",
-            "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
-            "img_width": "224",
-            "img_height": "224",
-            "need_transpose": true,
-            "need_softmax": false
+            "preset_name": "Small models",
+            "models": [
+                {
+                    "model_name": "ResNet50-caffe2",
+                    "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet50-caffe2-v1-9.onnx",
+                    "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
+                    "img_width": "224",
+                    "img_height": "224",
+                    "need_transpose": true,
+                    "need_softmax": false
+                },
+                {
+                    "model_name": "ResNet152-v2",
+                    "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/resnet152-v2-7.onnx",
+                    "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
+                    "img_width": "224",
+                    "img_height": "224",
+                    "need_transpose": true,
+                    "need_softmax": true
+                },
+                {
+                    "model_name": "YOLO-V8s-cls",
+                    "onnx_path": "/Users/plenkinav/Projects/opencv-classifiers/models/yolov8s-cls.onnx",
+                    "labels_path": "/Users/plenkinav/Projects/opencv-classifiers/models/synset.txt",
+                    "img_width": "224",
+                    "img_height": "224",
+                    "need_transpose": true,
+                    "need_softmax": false
+                }
+            ]
         }
     ]
 }

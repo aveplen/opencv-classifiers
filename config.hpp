@@ -30,10 +30,15 @@ struct Model {
     bool need_softmax;
 };
 
+struct Preset {
+    std::string preset_name;
+    std::vector<Model> models;
+};
+
 struct Config {
     Server server;
     Database database;
-    std::vector<Model> models;
+    std::vector<Preset> presets;
 };
 
 class ConfigReader {

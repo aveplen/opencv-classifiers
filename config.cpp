@@ -28,10 +28,10 @@ std::string read_file(std::string filename) {
 
 config::Server parse_server(Poco::SharedPtr<Poco::JSON::Object> server) {
     return config::Server{
+        .address = server->get("address"),
         .timeout = server->get("timeout"),
         .max_queued = server->get("max_queued"),
         .max_threads = server->get("max_threads"),
-        .address = server->get("address"),
         .statics_dir = server->get("statics_dir"),
     };
 }
@@ -63,6 +63,24 @@ std::vector<config::Model> parse_models(Poco::SharedPtr<Poco::JSON::Array> arr) 
     return models;
 }
 
+std::vector<config::Preset> parse_presets(Poco::SharedPtr<Poco::JSON::Array> arr) {
+    std::vector<config::Preset> presets;
+
+    for (std::size_t i = 0; i < arr->size(); i++) {
+        auto model = arr->getObject(i);
+
+        std::string preset_name = model->get("preset_name");
+        std::vector<config::Model> models = parse_models(model->getArray("models"));
+
+        presets.push_back(config::Preset{
+        .preset_name = preset_name,
+        .models = models,
+        });
+    }
+
+    return presets;
+}
+
 config::Config config::ConfigReader::read_config() {
     if (m_caching && m_cache.has_value()) {
         return m_cache.value();
@@ -78,7 +96,7 @@ config::Config config::ConfigReader::read_config() {
         config::Config{
         .server = parse_server(obj->getObject("server")),
         .database = parse_database(obj->getObject("database")),
-        .models = parse_models(obj->getArray("models")),
+        .presets = parse_presets(obj->getArray("presets")),
         }
     };
 

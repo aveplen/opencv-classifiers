@@ -175,6 +175,15 @@
 /Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/SQLite/CMakeFiles/install.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/SQLite/CMakeFiles/install/local.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/SQLite/CMakeFiles/install/strip.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/DataODBC.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/package.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/package_source.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/edit_cache.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/rebuild_cache.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/list_install_components.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/install.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/install/local.dir
+/Users/plenkinav/Projects/opencv-classifiers/build/poco/Data/ODBC/CMakeFiles/install/strip.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/poco/ActiveRecord/CMakeFiles/ActiveRecord.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/poco/ActiveRecord/CMakeFiles/package.dir
 /Users/plenkinav/Projects/opencv-classifiers/build/poco/ActiveRecord/CMakeFiles/package_source.dir

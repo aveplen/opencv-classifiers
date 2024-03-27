@@ -19,7 +19,7 @@
 
 - [ ] Обучить svn-классификатор на grocery-store
 - [ ] Написать отдельные main'ы для тестирования классификаторов
-- [ ] Обучить knn-классификатор на grocery-store
+- [ ] Обучить knn-классификатор на grocery-store - делать в последнюю очередь (тут нет как таковых весов - сохраняемая модель это тензоры из входных изображений)
 - [ ] Обучить rf-классификатор на grocery-store
 - [ ] Перенести веса классических классификаторов из scikit-learn формата в opencv
 - [ ] Обучить alexnet на grocery-store
@@ -41,6 +41,9 @@ https://deci.ai/blog/how-to-convert-a-pytorch-model-to-onnx/
 
 Обучение alexnet на pytorch:
 https://youtu.be/6c8WFGbPHpE
+
+Примеры конвертации knn в onnx:
+https://www.mql5.com/ru/articles/13451
 
 ---
 

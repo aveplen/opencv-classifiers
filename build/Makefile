@@ -715,6 +715,19 @@ DataSQLite/fast:
 .PHONY : DataSQLite/fast
 
 #=============================================================================
+# Target rules for targets named DataODBC
+
+# Build rule for target.
+DataODBC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataODBC
+.PHONY : DataODBC
+
+# fast build rule for target.
+DataODBC/fast:
+	$(MAKE) $(MAKESILENT) -f poco/Data/ODBC/CMakeFiles/DataODBC.dir/build.make poco/Data/ODBC/CMakeFiles/DataODBC.dir/build
+.PHONY : DataODBC/fast
+
+#=============================================================================
 # Target rules for targets named ActiveRecord
 
 # Build rule for target.
@@ -1207,6 +1220,7 @@ help:
 	@echo "... Boost_wave"
 	@echo "... Crypto"
 	@echo "... Data"
+	@echo "... DataODBC"
 	@echo "... DataSQLite"
 	@echo "... Encodings"
 	@echo "... File2Page"

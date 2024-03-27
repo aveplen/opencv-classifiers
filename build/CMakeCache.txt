@@ -74,17 +74,8 @@ BOOST_URL:STRING=https://boostorg.jfrog.io/artifactory/main/release/1.71.0/sourc
 //Boost download URL SHA256 checksum
 BOOST_URL_SHA256:STRING=d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
 
-//Build sample applications.
-BUILD_SAMPLES:BOOL=ON
-
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=ON
-
-//Build the testing tree.
-BUILD_TESTING:BOOL=ON
-
-//Build tests.
-BUILD_TESTS:BOOL=ON
 
 //Path to a file.
 BZIP2_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
@@ -103,9 +94,6 @@ Boost-CMake_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 Boost-CMake_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/boost-cmake
-
-//Link against boost statically.
-Boost_USE_STATIC_LIBS:BOOL=OFF
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
@@ -139,14 +127,15 @@ CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the ASM compiler during RELWITHDEBINFO builds.
 CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:STRING=Debug
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/bin/aarch64-apple-darwin21-g++-11
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/opt/homebrew/bin/aarch64-apple-darwin21-g++-11
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -171,8 +160,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/opt/homebrew/bin/aarch64-apple-darwin21-gcc-11
+//C compiler
+CMAKE_C_COMPILER:STRING=/opt/homebrew/bin/aarch64-apple-darwin21-gcc-11
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -218,8 +207,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/CMakeFiles/pkgRedirects
@@ -336,21 +325,6 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=example
 
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.8.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=8
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
-
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -422,13 +396,6 @@ CMAKE_TAPI:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Toolchains
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to the coverage program that CTest uses for performing coverage
-// inspection
-COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
-
-//Extra command line flags to pass to the coverage tool
-COVERAGE_EXTRA_FLAGS:STRING=-l
-
 //Enable to build OSX bundles
 CPACK_BINARY_BUNDLE:BOOL=OFF
 
@@ -483,68 +450,17 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
-//Postfix tag for the cpprest abi
-CPPREST_ABI_TAG:STRING=
-
-//Exclude Brotli compression functionality.
-CPPREST_EXCLUDE_BROTLI:BOOL=ON
-
-//Exclude compression functionality.
-CPPREST_EXCLUDE_COMPRESSION:BOOL=OFF
-
-//Exclude websockets functionality.
-CPPREST_EXCLUDE_WEBSOCKETS:BOOL=OFF
-
-//Directory to install CMake config files.
-CPPREST_EXPORT_DIR:STRING=cmake/cpprestsdk
-
-//Internal use.
-CPPREST_FILEIO_IMPL:STRING=posix
-
-//Internal use.
-CPPREST_HTTP_CLIENT_IMPL:STRING=asio
-
-//Internal use.
-CPPREST_HTTP_LISTENER_IMPL:STRING=asio
-
-//Add install commands.
-CPPREST_INSTALL:BOOL=ON
-
-//Install header files.
-CPPREST_INSTALL_HEADERS:BOOL=ON
-
-//Internal use.
-CPPREST_PPLX_IMPL:STRING=apple
-
-//Internal use.
-CPPREST_WEBSOCKETS_IMPL:STRING=wspp
-
-//How many times to retry timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_COUNT:STRING=3
-
-//How long to wait between timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_DELAY:STRING=5
-
 //Dependencies for the target
 Crypto_LIB_DEPENDS:STATIC=general;Poco::Foundation;general;OpenSSL::SSL;general;OpenSSL::Crypto;
 
-//Maximum time allowed before CTest will kill the test.
-DART_TESTING_TIMEOUT:STRING=1500
+//Dependencies for the target
+DataODBC_LIB_DEPENDS:STATIC=general;Poco::Data;general;ODBC::ODBC;
 
 //Dependencies for the target
 DataSQLite_LIB_DEPENDS:STATIC=general;Poco::Data;
 
 //Dependencies for the target
 Data_LIB_DEPENDS:STATIC=general;Poco::Foundation;
-
-//Value Computed by CMake
-DisplayImage_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build
-
-//Value Computed by CMake
-DisplayImage_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-DisplayImage_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers
 
 //Enable ActiveRecord
 ENABLE_ACTIVERECORD:BOOL=ON
@@ -572,7 +488,7 @@ ENABLE_DATA:BOOL=ON
 ENABLE_DATA_MYSQL:BOOL=OFF
 
 //Enable Data ODBC
-ENABLE_DATA_ODBC:BOOL=OFF
+ENABLE_DATA_ODBC:BOOL=ON
 
 //Enable Data PosgreSQL
 ENABLE_DATA_POSTGRESQL:BOOL=OFF
@@ -667,41 +583,14 @@ FETCHCONTENT_QUIET:BOOL=ON
 // for Boost
 FETCHCONTENT_SOURCE_DIR_BOOST:PATH=
 
-//When not empty, overrides where to find pre-populated content
-// for LoguruGitRepo
-FETCHCONTENT_SOURCE_DIR_LOGURUGITREPO:PATH=
-
-//When not empty, overrides where to find pre-populated content
-// for spdlog
-FETCHCONTENT_SOURCE_DIR_SPDLOG:PATH=
-
-//When not empty, overrides where to find pre-populated content
-// for yaml-cpp
-FETCHCONTENT_SOURCE_DIR_YAML-CPP:PATH=
-
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of Boost
 FETCHCONTENT_UPDATES_DISCONNECTED_BOOST:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of LoguruGitRepo
-FETCHCONTENT_UPDATES_DISCONNECTED_LOGURUGITREPO:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of spdlog
-FETCHCONTENT_UPDATES_DISCONNECTED_SPDLOG:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of yaml-cpp
-FETCHCONTENT_UPDATES_DISCONNECTED_YAML-CPP:BOOL=OFF
-
 //Force usage of OpenSSL even under windows
 FORCE_OPENSSL:BOOL=OFF
-
-//Path to a program.
-GITCOMMAND:FILEPATH=/opt/homebrew/bin/git
-
-//Git command line client
-GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
 
 //Iconv include directory
 ICONV_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
@@ -790,44 +679,8 @@ JSON_LIB_DEPENDS:STATIC=general;Poco::Foundation;
 //Dependencies for the target
 JWT_LIB_DEPENDS:STATIC=general;Poco::JSON;general;Poco::Crypto;
 
-//Build the project examples
-LOGURU_BUILD_EXAMPLES:BOOL=OFF
-
-//Build the tests
-LOGURU_BUILD_TESTS:BOOL=OFF
-
-//Generate the install target(s)
-LOGURU_INSTALL:BOOL=OFF
-
-LOGURU_PACKAGE_CONTACT:STRING=Emil Ernerfeldt <emil.ernerfeldt@gmail.com>
-
-LOGURU_PACKAGE_DESCRIPTION_FILE:STRING=/Users/plenkinav/Projects/opencv-classifiers/build/_deps/logurugitrepo-src/README.md
-
-LOGURU_PACKAGE_DESCRIPTION_SUMMARY:STRING=A lightweight C++ logging library
-
-LOGURU_PACKAGE_URL:STRING=https://github.com/emilk/loguru
-
-LOGURU_PACKAGE_VENDOR:STRING=Emil Ernerfeldt
-
-LOGURU_VERSION:STRING=2.1.0
-
-LOGURU_VERSION_MAJOR:STRING=2
-
-LOGURU_VERSION_MINOR:STRING=1
-
-LOGURU_VERSION_PATCH:STRING=0
-
-//Command to build the project
-MAKECOMMAND:STRING=/opt/homebrew/Cellar/cmake/3.27.1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
-
 //Message Compiler executable
 MC_EXECUTABLE:FILEPATH=MC_EXECUTABLE-NOTFOUND
-
-//Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
-
-//File that contains suppressions for the memory checker
-MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=MPIEXEC_EXECUTABLE-NOTFOUND
@@ -978,59 +831,14 @@ RT_LIBRARY:FILEPATH=RT_LIBRARY-NOTFOUND
 //Dependencies for the target
 Redis_LIB_DEPENDS:STATIC=general;Poco::Net;
 
-//Name of the computer/site where compile is being run
-SITE:STRING=i111665742
-
 //Set static library postfix
 STATIC_POSTFIX:STRING=
 
 //Dependencies for the target
 Util_LIB_DEPENDS:STATIC=general;Poco::Foundation;general;Poco::XML;general;Poco::JSON;
 
-//The directory containing a CMake configuration file for WEBSOCKETPP.
-WEBSOCKETPP_DIR:PATH=WEBSOCKETPP_DIR-NOTFOUND
-
-//Treat Warnings as Errors.
-WERROR:BOOL=ON
-
 //Dependencies for the target
 XML_LIB_DEPENDS:STATIC=general;Poco::Foundation;
-
-//Build yaml-cpp shared library
-YAML_BUILD_SHARED_LIBS:BOOL=OFF
-
-//Value Computed by CMake
-YAML_CPP_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/_deps/yaml-cpp-build
-
-//Enable yaml-cpp contrib in library
-YAML_CPP_BUILD_CONTRIB:BOOL=ON
-
-//Enable parse tools
-YAML_CPP_BUILD_TOOLS:BOOL=ON
-
-//Disable uninstallation of yaml-cpp
-YAML_CPP_DISABLE_UNINSTALL:BOOL=OFF
-
-//Format source
-YAML_CPP_FORMAT_SOURCE:BOOL=OFF
-
-//Enable generation of yaml-cpp install targets
-YAML_CPP_INSTALL:BOOL=OFF
-
-//Path to install the CMake package to
-YAML_CPP_INSTALL_CMAKEDIR:STRING=lib/cmake/yaml-cpp
-
-//Value Computed by CMake
-YAML_CPP_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-YAML_CPP_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/_deps/yaml-cpp-src
-
-//Use Position-Independent Code 
-YAML_ENABLE_PIC:BOOL=ON
-
-//Use system googletest if found
-YAML_USE_SYSTEM_GTEST:BOOL=OFF
 
 //Path to a file.
 ZLIB_INCLUDE_DIR:PATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
@@ -1045,24 +853,6 @@ ZLIB_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/
 Zip_LIB_DEPENDS:STATIC=general;Poco::Foundation;
 
 //Value Computed by CMake
-cpprestsdk-root_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/cpprestsdk
-
-//Value Computed by CMake
-cpprestsdk-root_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-cpprestsdk-root_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/cpprestsdk
-
-//Value Computed by CMake
-cpprestsdk_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/cpprestsdk/Release
-
-//Value Computed by CMake
-cpprestsdk_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-cpprestsdk_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/cpprestsdk/Release
-
-//Value Computed by CMake
 example_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build
 
 //Value Computed by CMake
@@ -1070,18 +860,6 @@ example_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 example_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers
-
-//Value Computed by CMake
-loguru_BINARY_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/_deps/logurugitrepo-build
-
-//The directory containing a CMake configuration file for loguru.
-loguru_DIR:PATH=loguru_DIR-NOTFOUND
-
-//Value Computed by CMake
-loguru_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-loguru_SOURCE_DIR:STATIC=/Users/plenkinav/Projects/opencv-classifiers/build/_deps/logurugitrepo-src
 
 //Path to a library.
 pkgcfg_lib_PC_APRUTIL_apr-1:FILEPATH=/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libapr-1.tbd
@@ -1121,9 +899,6 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/opt/homebrew/Cellar/openssl@3/3.2.1/lib/lib
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/opt/homebrew/Cellar/openssl@3/3.2.1/lib/libssl.dylib
-
-//The directory containing a CMake configuration file for yaml-cpp.
-yaml-cpp_DIR:PATH=yaml-cpp_DIR-NOTFOUND
 
 
 ########################
@@ -1233,6 +1008,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -1299,7 +1076,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1344,10 +1121,6 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_COMMAND
-COVERAGE_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
-COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_BUNDLE
 CPACK_BINARY_BUNDLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_DEB
@@ -1384,12 +1157,6 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
-CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
-CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DART_TESTING_TIMEOUT
-DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding APR
 FIND_PACKAGE_MESSAGE_DETAILS_APR:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/apr-1][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libapr-1.tbd][v1.5.2()]
 //Details about finding APRUTIL
@@ -1406,18 +1173,12 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/opt/homebrew/Cellar/openssl@3/3.
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd][/Applications/Xcode-14.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include][c ][v1.2.11()]
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GIT_EXECUTABLE
-GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 HAVE_ATOMIC_INT32:INTERNAL=TRUE
 //Result of TRY_COMPILE
 HAVE_NATIVE_SYSLOG:INTERNAL=TRUE
 //Result of TRY_COMPILE
 HAVE_PTHREAD_MUTEX_ROBUST:INTERNAL=FALSE
-//Have include xlocale.h
-HAVE_XLOCALE_H:INTERNAL=1
 //ADVANCED property for variable: ICONV_INCLUDE_DIR
 ICONV_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ICONV_LIBRARY
@@ -1470,12 +1231,6 @@ ICU_UCONV_EXECUTABLE-ADVANCED:INTERNAL=1
 ICU_UC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ICU_UC_LIBRARY_RELEASE
 ICU_UC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MAKECOMMAND
-MAKECOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_COMMAND
-MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
-MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
 MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
@@ -1776,8 +1531,6 @@ PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 PostgreSQL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PostgreSQL_LIBRARY
 PostgreSQL_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SITE
-SITE-ADVANCED:INTERNAL=1
 //Have symbol __ANDROID__
 USE_ANDROID:INTERNAL=0
 //Have symbol __APPLE__

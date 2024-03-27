@@ -50,12 +50,14 @@ history::History::History(
 long int id,
 std::string original_image,
 std::string cropped_image,
+std::string preset_name,
 std::string created_at,
 std::vector<HistoryEntry> entries
 )
 : m_id(id),
   m_original_image(std::move(original_image)),
   m_cropped_image(std::move(cropped_image)),
+  m_preset_name(std::move(preset_name)),
   m_created_at(std::move(created_at)),
   m_entries(std::move(entries)){};
 
@@ -119,6 +121,7 @@ Poco::Data::Session& session
         h_db.id,
         h_db.original_image,
         h_db.cropped_image,
+        h_db.preset_name,
         h_db.created_at,
         history_entries
         );
@@ -135,6 +138,7 @@ Poco::Data::Session& session
         .id = m_id,
         .original_image = m_original_image,
         .cropped_image = m_cropped_image,
+        .preset_name = m_preset_name,
         .created_at = m_created_at,
     };
 
@@ -178,6 +182,7 @@ std::vector<History*> histories
             .id = h->m_id,
             .original_image = h->m_original_image,
             .cropped_image = h->m_cropped_image,
+            .preset_name = h->m_preset_name,
             .created_at = h->m_created_at,
         };
 
@@ -395,7 +400,8 @@ Poco::Data::Session& session
                 .id = rs.row(r).get(0),
                 .original_image = rs.row(r).get(1),
                 .cropped_image = rs.row(r).get(2),
-                .created_at = rs.row(r).get(3),
+                .preset_name = rs.row(r).get(3),
+                .created_at = rs.row(r).get(4),
             };
 
             histories.push_back(history_entry_result);
@@ -418,6 +424,7 @@ void data::HistoryDB::create(Poco::Data::Session& session) {
         insert << data::HISTORY_INSERT_STATEMENT,
         use(this->original_image),
         use(this->cropped_image),
+        use(this->preset_name),
         use(this->created_at),
         into(this->id);
 

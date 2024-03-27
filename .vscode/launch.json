@@ -10,6 +10,20 @@
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "program": "${workspaceRoot}/opencv-classifiers"
+        },
+        {
+            "name": "Debug learn-svm",
+            "type": "lldb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/learning",
+            "program": "${workspaceRoot}/learning/learn-svm"
+        },
+        {
+            "name": "Debug learn-hog-svm",
+            "type": "lldb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/learning",
+            "program": "${workspaceRoot}/learning/learn-hog-svm"
         }
     ],
 }

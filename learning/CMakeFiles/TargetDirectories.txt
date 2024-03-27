@@ -1,0 +1,4 @@
+/Users/plenkinav/Projects/opencv-classifiers/learning/CMakeFiles/learn-svm.dir
+/Users/plenkinav/Projects/opencv-classifiers/learning/CMakeFiles/learn-hog-svm.dir
+/Users/plenkinav/Projects/opencv-classifiers/learning/CMakeFiles/edit_cache.dir
+/Users/plenkinav/Projects/opencv-classifiers/learning/CMakeFiles/rebuild_cache.dir

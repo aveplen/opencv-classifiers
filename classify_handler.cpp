@@ -32,6 +32,7 @@ namespace {
 // =================== request ===================
 
 struct ClassifyRequest {
+    std::string preset;
     std::string data;
     std::optional<int> client_limit;
     std::optional<int> history_limit;
@@ -48,6 +49,7 @@ ClassifyRequest parse_request(std::istream& req_stream) {
     }
 
     auto req = ClassifyRequest{
+        .preset = obj->get("preset"),
         .data = obj->get("data"),
         .client_limit = std::nullopt,
         .history_limit = std::nullopt,
@@ -187,8 +189,8 @@ std::optional<int> req_limit
 
         prob_sum += res.probability;
         auto class_prob = ClassifyClassProb{
-            .prob = res.probability,
             .clazz = prepare_label(res.class_name),
+            .prob = res.probability,
         };
 
         if (i == slice.size() - 1) {
@@ -201,11 +203,11 @@ std::optional<int> req_limit
 
     return ClassifyResponse{
         .model = model_name,
-        .probs = response_probs,
-        .top_full_label = slice[0].class_name,
         .time_spent = TimeSpan{
         .span = static_cast<unsigned long>(duration),
-        .unit = unit }
+        .unit = unit },
+        .probs = response_probs,
+        .top_full_label = slice[0].class_name,
     };
 }
 
@@ -259,13 +261,14 @@ std::optional<int> history_limit
 
 std::vector<ClassifyResponse> classify(
 Poco::Data::Session& session,
-std::vector<config::Model> models_settings,
+config::Preset preset,
 ClassifyRequest req
 ) {
     std::vector<ClassifyResponse> repsonse;
     std::vector<history::HistoryEntry> history_entries;
 
-    for (config::Model& model_settings : models_settings) {
+    // todo: add preset.preset_name to response and history
+    for (config::Model& model_settings : preset.models) {
         models::OnnxModel model(
         model_settings.onnx_path,
         model_settings.labels_path,
@@ -303,6 +306,7 @@ ClassifyRequest req
     -1,
     req.data,
     req.data,
+    req.preset,
     "now",
     history_entries
     );
@@ -327,7 +331,15 @@ Poco::Net::HTTPServerResponse& response
 ) {
     ClassifyRequest req = parse_request(request.stream());
 
-    std::vector<ClassifyResponse> results = classify(m_session, m_config.models, req);
+    config::Preset preset;
+    for (config::Preset& pr : m_config.presets) {
+        if (pr.preset_name == req.preset) {
+            preset = pr;
+            break;
+        }
+    }
+
+    std::vector<ClassifyResponse> results = classify(m_session, preset, req);
     Poco::JSON::Array results_json;
     for (auto& result : results) {
         results_json.add(result.toJson());
