@@ -7,7 +7,6 @@ bin/**
 .cache/**
 _deps/**
 CMakeFiles/**
-lib/**
 
 *.sqlite
 Makefile
