@@ -12,6 +12,25 @@ CMakeFiles/**
 Makefile
 *.pt
 *.onnx
+models/**
+PetImages/**
+groceries/**
+benchmark/cifar-10/**
+benchmark/groceries/**
+benchmark/imagenet_labels.txt
+benchmark/imagenette/**
+benchmark/petimages/**
+benchmark/petimages_labels.txt
+benchmark_no_accuracy.py
+cifar-10/**
+get_resnet_inception.ipynb
+imagenette2-160/**
+lib/__pycache__/**
+minimal/
+models/sift_kmeans_svm_caltech_centers.npy
+models/sift_kmeans_svm_cifar_centers.npy
+new_models/**
+results/**
 
 # Pictures
 **/*.png
